@@ -8,7 +8,7 @@ description: >-
 
 ## What and why Dart ?
 
-&#x20;Dart is an opensource project from Google offering a fast and multi-platform programming language. The atPlatform team choose Dart as a high level language to build proof of concept code but Drat proved to be a fast and reliable language to build on and as we needed features like being able to compile to executables, the Dart team delivered.&#x20;
+&#x20;Dart is an opensource project from Google offering a fast and multi-platform programming language. The atPlatform team choose Dart as a high level language to build proof of concept code but Dart proved to be a fast and reliable language to build on and as we needed features like being able to compile to executables, the Dart team delivered.&#x20;
 
 At this point we have ported the atSDK to other languages, like Java and Python the Dart atSDK is a great place to start.&#x20;
 
