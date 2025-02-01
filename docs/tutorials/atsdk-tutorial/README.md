@@ -1,3 +1,7 @@
+---
+description: Get hands-on with the atSDK. Simple examples to kickstart your development.
+---
+
 # Dart atSDK Walkthrough
 
 {% hint style="info" %}
