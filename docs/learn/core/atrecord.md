@@ -1,5 +1,6 @@
 ---
 description: The format atServers use to store and share data.
+icon: books
 ---
 
 # atRecord
@@ -138,8 +139,7 @@ Text or binary values can be saved in an atServer.&#x20;
 
 **Small objects are fine to use the atServer but large objects should be used by reference.**
 
-For example, derive a new encryption key, encypt a file, upload that file to location, then notify other atSigns of the location and the encyption key. This is how [atmospherePro ](https://atsign.com/apps/atmospherepro/)works.\
-
+For example, derive a new encryption key, encypt a file, upload that file to location, then notify other atSigns of the location and the encyption key. This is how [atmospherePro ](https://atsign.com/apps/atmospherepro/)works.<br>
 
 {% hint style="warning" %}
 The size of the value saved in an atServer is bound by the atProtocol's config parameter "maxBufferSize".

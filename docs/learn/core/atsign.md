@@ -1,5 +1,6 @@
 ---
 description: A unique identifier which serves as the address of the atServer
+icon: at
 ---
 
 # atSign
@@ -27,8 +28,8 @@ There are multiple ways to generate the associated `.atKeys` file for an atSign.
 Most applications have a way to export the .atkeys to a file if you need to keep them safe or use them on another device.
 
 * [Using atmospherePro](https://www.youtube.com/watch?v=8xJnbsuF4C8) (3 minute video)
-* Dart [at\_onboarding\_cli/at\_activate](https://github.com/atsign-foundation/at\_libraries/tree/trunk/packages/at\_onboarding\_cli#activate\_cli) to activate an owned atSign or [at\_onboarding\_cli/at\_register](https://github.com/atsign-foundation/at\_libraries/tree/trunk/packages/at\_onboarding\_cli#register\_cli) to generate a new free atSign.
-* [Java Registration CLI](https://github.com/atsign-foundation/at\_java/blob/trunk/getting\_started\_guide.md)
+* Dart [at\_onboarding\_cli/at\_activate](https://github.com/atsign-foundation/at_libraries/tree/trunk/packages/at_onboarding_cli#activate_cli) to activate an owned atSign or [at\_onboarding\_cli/at\_register](https://github.com/atsign-foundation/at_libraries/tree/trunk/packages/at_onboarding_cli#register_cli) to generate a new free atSign.
+* [Java Registration CLI](https://github.com/atsign-foundation/at_java/blob/trunk/getting_started_guide.md)
 
 ### Paid atSigns
 
