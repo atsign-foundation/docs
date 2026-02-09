@@ -2,7 +2,7 @@
 
 * [Welcome](README.md)
 * [atPlatform](learn/core/README.md)
-  * [atSign](learn/core/atsign.md)
+  * [Atsign](learn/core/atsign.md)
   * [atRecord](learn/core/atrecord.md)
 * [atSDK](learn/sdk/README.md)
   * [Get Started](sdk/get-started.md)
