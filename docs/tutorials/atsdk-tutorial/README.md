@@ -1,5 +1,6 @@
 ---
 description: Get hands-on with the atSDK. Simple examples to kickstart your development.
+icon: dart-lang
 ---
 
 # Dart atSDK Walkthrough

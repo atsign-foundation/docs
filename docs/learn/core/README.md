@@ -1,5 +1,6 @@
 ---
 description: An overview of Atsign's core pillars of technology
+icon: layer-group
 ---
 
 # atPlatform

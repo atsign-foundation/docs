@@ -1,5 +1,6 @@
 ---
 description: How we scale and provide resilience.
+icon: gear-complex-code
 ---
 
 # Infrastructure
