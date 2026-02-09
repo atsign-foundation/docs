@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🏠 Atsign Docs](README.md)
+* [Welcome](README.md)
 * [atPlatform](learn/core/README.md)
   * [atSign](learn/core/atsign.md)
   * [atRecord](learn/core/atrecord.md)
@@ -15,7 +15,7 @@
     * [Connection Hooks](sdk/synchronization/connection-hooks.md)
 * [Infrastructure](infrastructure.md)
 
-## 🗒️ Tutorials
+## Tutorials
 
 * [Dart atSDK Walkthrough](tutorials/atsdk-tutorial/README.md)
   * [Using the atSDK with Dart](tutorials/atsdk-tutorial/using-the-atsdk-with-dart.md)
@@ -26,9 +26,9 @@
   * [Remote Procedure Calls (RPC)](tutorials/atsdk-tutorial/rpc.md)
   * [atTalk - Encrypted chat client](tutorials/atsdk-tutorial/attalk.md)
 
-## Related pages
+## Important link
 
-* [Main site](https://atsign.com/)
-* [atProtocol specification](https://github.com/atsign-foundation/at\_protocol/blob/trunk/specification/at\_protocol\_specification.md)
+* [atsign.com ](https://atsign.com/)
+* [atProtocol specification](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md)
 * [atSign Registrar](https://my.atsign.com/)
 * [NoPorts](https://noports.com)
