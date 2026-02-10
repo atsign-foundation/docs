@@ -29,7 +29,11 @@
 ## Important link
 
 * [atsign.com ](https://atsign.com/)
-* [atProtocol specification](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md)
-* [atSign Registrar](https://my.atsign.com/)
+* [AtSign Registrar](https://my.atsign.com/)
 * [NoPorts](https://noports.com)
+* [atProtocol specification](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md)
+
+## SOCIALS
+
+* [Discord](https://discord.atsign.com/)
 * [Youtube](https://www.youtube.com/c/AtsignCo?themeRefresh=1)
