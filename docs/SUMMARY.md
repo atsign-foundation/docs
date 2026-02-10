@@ -37,4 +37,4 @@
 
 * [Github](https://github.com/atsign-foundation)
 * [Discord](https://discord.atsign.com/)
-* [Youtube](https://www.youtube.com/c/AtsignCo?themeRefresh=1)
+* [YouTube](https://www.youtube.com/c/AtsignCo?themeRefresh=1)
