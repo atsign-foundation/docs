@@ -29,7 +29,7 @@
 ## Important link
 
 * [atsign.com ](https://atsign.com/)
-* [AtSign Registrar](https://my.atsign.com/)
+* [Atsign Registrar](https://my.atsign.com/)
 * [NoPorts](https://noports.com)
 * [atPlatform Protocol Specs](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md)
 
