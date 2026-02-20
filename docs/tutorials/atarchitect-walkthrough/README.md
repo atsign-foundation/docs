@@ -49,6 +49,12 @@ This walkthrough guides you through creating, loading, and exporting an app blue
 
 
 {% endstep %}
+
+{% step %}
+### Create your own Blueprint
+
+
+{% endstep %}
 {% endstepper %}
 
 ***
@@ -101,7 +107,7 @@ The demo blueprint is a complete secure‑messaging example which gives you a fu
 * Processes such as identity management, policy enforcement, and message pipeline.
 {% endhint %}
 
-### 4. Export the Guide
+### 4. Export the Prompt
 
 Once the blueprint is loaded:
 
