@@ -6,11 +6,11 @@ description: How to send and receive real-time messages
 
 {% tabs %}
 {% tab title="Flutter / Dart" %}
-In Dart, the AtClient is stored within the AtClientManager. Once an atSign has been [onboarded](onboarding.md), you will be able to access the AtClientManager for its associated atSign.
+In Dart, the AtClient is stored within the AtClientManager. Once an Atign has been [onboarded](onboarding.md), you will be able to access the AtClientManager for its associated Atsign.
 
 ### AtClientManager
 
-AtClientManager is a [singleton](https://en.wikipedia.org/wiki/Singleton\_pattern) model. When `AtClientManager.getInstance()` is called, it will get the AtClientManager instance for the last onboarded atSign.
+AtClientManager is a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) model. When `AtClientManager.getInstance()` is called, it will get the AtClientManager instance for the last onboarded atSign.
 
 ```dart
 AtClientManager atClientManager = AtClientManager.getInstance();
@@ -19,7 +19,7 @@ AtClientManager atClientManager = AtClientManager.getInstance();
 {% hint style="info" %}
 If you need simultaneous access to multiple atClients, you need to create a new [isolate](https://dart.dev/language/concurrency#how-isolates-work) for each additional atClient, and onboard its atSign within the isolate.
 
-An example of this pattern can be found in [at\_daemon\_server](https://github.com/atsign-foundation/at\_services/tree/trunk/packages/at\_daemon\_server/lib/src/server).
+An example of this pattern can be found in [at\_daemon\_server](https://github.com/atsign-foundation/at_services/tree/trunk/packages/at_daemon_server/lib/src/server).
 {% endhint %}
 
 ### AtClient
@@ -60,7 +60,7 @@ await atClient.notificationService.notify(
 {% tab title="C" %}
 ## C
 
-You can find the full code of this example on our [GitHub](https://github.com/atsign-foundation/at\_demos/tree/trunk/demos/get\_started\_c/4a-monitor#4a---monitor).
+You can find the full code of this example on our [GitHub](https://github.com/atsign-foundation/at_demos/tree/trunk/demos/get_started_c/4a-monitor#4a---monitor).
 
 ### Table of Contents
 
@@ -68,24 +68,24 @@ You can find the full code of this example on our [GitHub](https://github.com/at
 * [#monitor](events.md#monitor "mention")
   * [#id-1.-include-monitor.h](events.md#id-1.-include-monitor.h "mention")
   * [#id-2.-create-a-monitor-context](events.md#id-2.-create-a-monitor-context "mention")
-  * [#id-3.-call-atclient\_monitor\_pkam\_authenticate](events.md#id-3.-call-atclient\_monitor\_pkam\_authenticate "mention")
-  * [#id-4.-call-atclient\_monitor\_start](events.md#id-4.-call-atclient\_monitor\_start "mention")
-  * [#id-5.-call-atclient\_monitor\_read](events.md#id-5.-call-atclient\_monitor\_read "mention")
+  * [#id-3.-call-atclient\_monitor\_pkam\_authenticate](events.md#id-3.-call-atclient_monitor_pkam_authenticate "mention")
+  * [#id-4.-call-atclient\_monitor\_start](events.md#id-4.-call-atclient_monitor_start "mention")
+  * [#id-5.-call-atclient\_monitor\_read](events.md#id-5.-call-atclient_monitor_read "mention")
   * [#id-6.-free-everything](events.md#id-6.-free-everything "mention")
   * [#example-application](events.md#example-application "mention")
 * [#notify](events.md#notify "mention")
   * [#id-1.-include-notify.h](events.md#id-1.-include-notify.h "mention")
   * [#id-2.-create-a-shared-atkey](events.md#id-2.-create-a-shared-atkey "mention")
   * [#id-3.-set-up-notify-params](events.md#id-3.-set-up-notify-params "mention")
-  * [#id-4.-call-atclient\_notify](events.md#id-4.-call-atclient\_notify "mention")
+  * [#id-4.-call-atclient\_notify](events.md#id-4.-call-atclient_notify "mention")
   * [#id-5.-free-everything](events.md#id-5.-free-everything "mention")
   * [#example-application-1](events.md#example-application-1 "mention")
 
 ### Introduction
 
-Events is how we send and receive real-time messages in the atProtocol. The client SDK assists in using the atProtocol simply and handles all the complex encryption stuff for you.
+Events is how we send and receive real-time messages in the atPlatform Protocol. The client SDK assists in using the atPlatform Protocol simply and handles all the complex encryption stuff for you.
 
-* `notify` is how we send a real-time message to an atSign
+* `notify` is how we send a real-time message to an Atsign
 * `monitor` is how we listen for real-time messages
 
 ### Monitor
@@ -177,7 +177,7 @@ atclient_monitor_response_free(&response);
 
 #### Example Application
 
-You can find the full code of this example on our [GitHub](https://github.com/atsign-foundation/at\_demos/tree/trunk/demos/get\_started\_c/4a-monitor#4a---monitor).
+You can find the full code of this example on our [GitHub](https://github.com/atsign-foundation/at_demos/tree/trunk/demos/get_started_c/4a-monitor#4a---monitor).
 
 ```c
 #include <atclient/atclient.h>
@@ -316,7 +316,7 @@ exit:
 
 #### 2. Create a Shared atKey
 
-Since we are notifying another atSign, we have to set up a Shared atKey.&#x20;
+Since we are notifying another Atsign, we have to set up a Shared atKey.&#x20;
 
 This process should be familiar to you if you have already gone through [crud-operations.md](crud-operations.md "mention").
 
@@ -351,7 +351,7 @@ if(atclient_notify_params_set_value(&notify_params, value) != 0) {
 
 #### 4. Call \`atclient\_notify\`
 
-Simply call `atclient_notify` .This will send a notification to the `shared_with` atSign that you specified when creating the Shared atKey which was done in this [step](events.md#id-2.-create-a-shared-atkey).
+Simply call `atclient_notify` .This will send a notification to the `shared_with` Atsign that you specified when creating the Shared atKey which was done in this [step](events.md#id-2.-create-a-shared-atkey).
 
 We will pass `NULL` into the `commit_id` parameter because we don't reallty care about the commt id for now. You can receive it by passing a `int *` if you would like.
 
@@ -372,7 +372,7 @@ atclient_notify_params_free(&notify_params);
 
 #### Example Application
 
-You can find the full code of this example on our [GitHub](https://github.com/atsign-foundation/at\_demos/tree/trunk/demos/get\_started\_c/4b-notify#4b---notify).
+You can find the full code of this example on our [GitHub](https://github.com/atsign-foundation/at_demos/tree/trunk/demos/get_started_c/4b-notify#4b---notify).
 
 ```c
 #include <atclient/atclient.h>

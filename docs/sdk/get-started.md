@@ -1,5 +1,5 @@
 ---
-description: Setup the atSDK for your preferred language
+description: Set up the atSDK for your preferred language
 ---
 
 # Get Started
@@ -10,7 +10,7 @@ description: Setup the atSDK for your preferred language
 
 Guide coming soon!
 
-For now, please checkout our [atsdk-tutorial](../tutorials/atsdk-tutorial/ "mention")
+For now, please check out our [atsdk-tutorial](../tutorials/atsdk-tutorial/ "mention")
 {% endtab %}
 
 {% tab title="Flutter" %}
@@ -238,7 +238,7 @@ Now you are ready to begin developing!
 
 Setup a CMake project which includes the atSDK package suite.
 
-The full example can be found [here](https://github.com/atsign-foundation/at\_demos/tree/trunk/demos/get\_started\_c/0-my-first-c-app).
+The full example can be found [here](https://github.com/atsign-foundation/at_demos/tree/trunk/demos/get_started_c/0-my-first-c-app).
 
 #### 1. Ensure you have a C Compiler, CMake, and a build automation tool
 
@@ -303,7 +303,7 @@ The above `CMakeLists.txt` will use FetchContent to download the C atSDK for you
 
 Inside your project folder, create a new file called `main.c`
 
-Change the line `#define ATSIGN "@jeremy_0"` to the atSign that you have keys to. For example, if you own an atSign `@alice` and have its keys in the correct directory `~/.atsign/keys/@alice_key.atKeys`, then I would change this line in my code to `#define ATSIGN "@alice"`
+Change the line `#define ATSIGN "@jeremy_0"` to the atSign that you have keys to. For example, if you own an Atsign `@alice` and have its keys in the correct directory `~/.atsign/keys/@alice_key.atKeys`, then I would change this line in my code to `#define ATSIGN "@alice"`
 
 ```c
 #include <atclient/atclient.h>
@@ -427,7 +427,7 @@ Your output will look similar to:
 [INFO] 2024-08-15 00:37:17.019891 | my_first_c_app | Authenticated to atServer successfully!
 ```
 
-Congratulations! You have successfully ran a barebones Atsign C application.
+Congratulations! You have successfully run a barebones Atsign C application.
 {% endtab %}
 {% endtabs %}
 

@@ -20,15 +20,15 @@
 * [Dart atSDK Walkthrough](tutorials/atsdk-tutorial/README.md)
   * [Using the atSDK with Dart](tutorials/atsdk-tutorial/using-the-atsdk-with-dart.md)
   * [Get sample code](tutorials/atsdk-tutorial/get-sample-code.md)
-  * [Cutting your atSigns keys](tutorials/atsdk-tutorial/cutting-your-atsigns-keys.md)
+  * [Cutting your Atsign keys](tutorials/atsdk-tutorial/cutting-your-atsigns-keys.md)
   * [Put and Get data asynchronously](tutorials/atsdk-tutorial/put-and-get-data-asynchronously.md)
-  * [Send and Receive data synchronously.](tutorials/atsdk-tutorial/send-and-receive-data-synchronously.md)
+  * [Send and Receive data synchronously](tutorials/atsdk-tutorial/send-and-receive-data-synchronously.md)
   * [Remote Procedure Calls (RPC)](tutorials/atsdk-tutorial/rpc.md)
   * [atTalk - Encrypted chat client](tutorials/atsdk-tutorial/attalk.md)
 * [atArchitect Walkthrough](tutorials/atarchitect-walkthrough/README.md)
   * [Nodes and Connections](tutorials/atarchitect-walkthrough/nodes-and-connections.md)
 
-## Important link
+## Important links
 
 * [atsign.com ](https://atsign.com/)
 * [Atsign Registrar](https://my.atsign.com/)
@@ -37,6 +37,6 @@
 
 ## SOCIALS
 
-* [Github](https://github.com/atsign-foundation)
+* [GitHub](https://github.com/atsign-foundation)
 * [Discord](https://discord.atsign.com/)
 * [YouTube](https://www.youtube.com/c/AtsignCo?themeRefresh=1)
