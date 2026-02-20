@@ -25,6 +25,8 @@
   * [Send and Receive data synchronously.](tutorials/atsdk-tutorial/send-and-receive-data-synchronously.md)
   * [Remote Procedure Calls (RPC)](tutorials/atsdk-tutorial/rpc.md)
   * [atTalk - Encrypted chat client](tutorials/atsdk-tutorial/attalk.md)
+* [atArchitect Walkthrough](tutorials/atarchitect-walkthrough/README.md)
+  * [Nodes and Connections](tutorials/atarchitect-walkthrough/nodes-and-connections.md)
 
 ## Important link
 
