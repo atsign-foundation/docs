@@ -7,9 +7,9 @@ coverY: 0
 coverHeight: 497
 ---
 
-# atArchitect Walkthrough
+# AI Architect Walkthrough
 
-This walkthrough guides you through creating, loading, and exporting an app blueprint using atArchitect, then using that blueprint to generate and run an atPlatform app in your IDE.
+This walkthrough guides you through creating, loading, and exporting an app blueprint using AI Architect, then using that blueprint to generate and run an atPlatform app in your IDE.
 
 ***
 
