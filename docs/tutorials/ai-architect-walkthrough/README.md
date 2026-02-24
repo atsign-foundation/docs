@@ -9,73 +9,61 @@ coverHeight: 497
 
 # AI Architect Walkthrough
 
-This walkthrough guides you through creating, loading, and exporting an app blueprint using AI Architect, then using that blueprint to generate and run an atPlatform app in your IDE.
-
-***
+This walkthrough guides you through loading a Blueprint and exporting a prompt using AI Architect, then using that blueprint to generate and run an atPlatform app in your IDE.
 
 {% stepper %}
 {% step %}
-### Get Your Starter Pack Atsigns <a href="#step1_atarchitect" id="step1_atarchitect"></a>
+### [Open AI Architect and Load the Example Blueprint](./#open-ai-architect) <a href="#open" id="open"></a>
 
-
+Load the example so you can see how a Blueprint is structured.
 {% endstep %}
 
 {% step %}
-### Open AI Architect
+### [Export the Prompt](./#id-2.-export-the-prompt)
 
-
+Export the prompt that will be used to tell you LLM exactly what to build.
 {% endstep %}
 
 {% step %}
-### Load the Demo Blueprint
+### [Open Your IDE, Plan and Code your App](./#id-3.-open-your-ide-plan-and-code-your-app)
 
-
+Open your IDE, set your LLM to plan, and once happy, let it generate the code.
 {% endstep %}
 
 {% step %}
-### Export Prompt
+### [Build and Run the App](./#id-4.-build-and-run-the-app)
 
-
+Run the app to make sure everything works as expected.
 {% endstep %}
 
 {% step %}
-### Open Your IDE, Plan and Code your App
+### [Create your own Blueprint](./#id-5.-create-your-own-blueprint)
 
-
-{% endstep %}
-
-{% step %}
-### Build and Run the App
-
-
-{% endstep %}
-
-{% step %}
-### Create your own Blueprint
-
-
+Make a Blueprint for your own idea and repeat the process.
 {% endstep %}
 {% endstepper %}
 
 ***
 
-### 1. Get Your Starter Pack Atsigns <a href="#step1_atarchitect" id="step1_atarchitect"></a>
+### Pre-requisite - Get Your Starter Pack Atsigns <a href="#step1_atarchitect" id="step1_atarchitect"></a>
 
 Before building or testing any atPlatform app, you need two Atsigns. These act as the identities your app will use during testing and development.
 
 1. &#x20;Visit [**my.atsign.com/starterpack**](https://my.atsign.com/starterpack)**.**
 2. &#x20;Verify your email and claim your two free starter-pack Atsigns.
 
+If you already have Atsigns, you can log into [**my.atsign.com/login**](https://my.atsign.com/login) to access them.
+
 {% hint style="info" %}
 These Atsigns will be used later when you run your generated app to test authentication and secure communication.
 {% endhint %}
 
-### 2. Open AI Architect
+### 1. Open AI Architect and Load the Example Blueprint <a href="#open-ai-architect" id="open-ai-architect"></a>
 
 AI Architect is the visual blueprinting tool used to design your app’s structure before generating the LLM prompt.
 
-1. Go to [**aiarchitect.atsign.com**](https://aiarchitect.atsign.com/).
-2. This opens the workspace where you create or load a Blueprint. The Blueprint you create here becomes the input for your LLM-powered code generation.
+1. Go to [**aiarchitect.atsign.com**](https://aiarchitect.atsign.com/). This opens the workspace where you create or load a Blueprint. The Blueprint you create here becomes the input for your LLM-powered code generation.
+2. Click on **Start with Demo Blueprint** to load our prebuilt example Blueprint. AI Architect will populate the canvas.
 
 {% hint style="info" %}
 A Blueprint is a visual map of your application. Each box represents a node. This could be a person, a process, an AI agent, a service, or any other entity involved in your system. The lines between nodes show how information flows from one part of the system to another.
@@ -89,25 +77,7 @@ Every node includes a Notes section, which acts as the node’s job description.
 A clear Blueprint gives the LLM the structure it needs to build your application in stages.
 {% endhint %}
 
-### 3. Load the Demo Blueprint
-
-To help you get started quickly, you can load a prebuilt example: a secure messaging app Blueprint.
-
-1. Download the demo file from this link: [**Secure Messaging Example**](https://drive.google.com/uc?export=download\&id=1trrDHuDG580yBX9NpVnYtyWUNN1naPwK)**.**
-2. Select **Load From File** and choose the file you just downloaded.
-3. AI Architect will populate the canvas with the full secure messaging blueprint.
-
-{% hint style="info" %}
-The demo blueprint is a complete secure‑messaging example which gives you a fully populated map containing:
-
-* 14 nodes (users, processes, data objects)
-* 9 connections
-* Messaging flows, group logic, encryption paths
-* Entities such as messages, threads, files, and voice notes
-* Processes such as identity management, policy enforcement, and message pipeline.
-{% endhint %}
-
-### 4. Export the Prompt
+### 2. Export the Prompt
 
 Once the blueprint is loaded:
 
@@ -132,15 +102,19 @@ The prompt includes:
 This becomes the instruction set your LLM will follow to generate the full application.
 {% endhint %}
 
-### 5. Open Your IDE, Plan and Code your App
+### 3. Open Your IDE, Plan and Code your App
 
 {% hint style="success" %}
-You can use any LLM or IDE you like. We recommend using [Visual Studio Code](https://code.visualstudio.com/) and will refer to it here.
+You can use any IDE you like but we recommend [Visual Studio Code](https://code.visualstudio.com/). When selecting LLMs we have had the most success with the following:
+
+* Claude Sonnet 4.5+
+* Claude Opus 4.5+
+* Gemini 3
 {% endhint %}
 
-Visual Studio Code gives you the flexibility to work with a variety of LLMs, not just one. Depending on the extensions you install, you can choose from models like OpenAI, Gemini, Claude, Copilot, and others.&#x20;
+Visual Studio Code gives you the flexibility to work with a variety of LLMs, not just one. Depending on the extensions you install, you can choose from models like OpenAI, Gemini, Claude and others.&#x20;
 
-To get started, you’ll need to create a new empty folder (without any spaces in the name) and set your LLM to **Plan Mode.** Starting in Plan Mode is important because it helps to ensure the LLM is going to build what you want it to build.
+To get started, you’ll need to create a new empty folder and set your LLM to **Plan Mode.** Starting in Plan Mode is important because it helps to ensure the LLM is going to build what you want it to build.
 
 1. Paste the exported prompt directly into the chat window. It will plan the project and present the plan to you. When you are happy, Proceed with implementation and it will create files, and set up the app.&#x20;
 2. You will be asked to confirm certain actions (file creation, folder setup, dependency installation).
@@ -157,7 +131,7 @@ The LLM will:
 * Set up authentication, onboarding, and identity management&#x20;
 {% endhint %}
 
-### 6. Build and Run the App
+### 4. Build and Run the App
 
 Once the code generation is complete:
 
@@ -174,7 +148,7 @@ This validates:
 * Encrypted messaging
 {% endhint %}
 
-### 7. Create your own Blueprint
+### 5. Create your own Blueprint
 
 Once you’ve explored the example Blueprint, you’re ready to create your own. Start Simple. A Blueprint doesn’t need to be perfect on the first pass. Its purpose is to help you think clearly about how your application works and to get you to working code quickly and securely.
 
