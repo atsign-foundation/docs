@@ -21,7 +21,7 @@ This walkthrough guides you through creating, loading, and exporting an app blue
 {% endstep %}
 
 {% step %}
-### Open atArchitect
+### Open AI Architect
 
 
 {% endstep %}
@@ -39,7 +39,7 @@ This walkthrough guides you through creating, loading, and exporting an app blue
 {% endstep %}
 
 {% step %}
-### Open Your IDE
+### Open Your IDE, Plan and Code your App
 
 
 {% endstep %}
@@ -70,11 +70,11 @@ Before building or testing any atPlatform app, you need two Atsigns. These act a
 These Atsigns will be used later when you run your generated app to test authentication and secure communication.
 {% endhint %}
 
-### 2. Open atArchitect
+### 2. Open AI Architect
 
-atArchitect is the visual blueprinting tool used to design your app’s structure before generating the LLM prompt.
+AI Architect is the visual blueprinting tool used to design your app’s structure before generating the LLM prompt.
 
-1. Go to [**atarchitect.atsign.com**](https://atarchitect.atsign.com/)**.**
+1. Go to [**aiarchitect.atsign.com**](https://aiarchitect.atsign.com/).
 2. This opens the workspace where you create or load a Blueprint. The Blueprint you create here becomes the input for your LLM-powered code generation.
 
 {% hint style="info" %}
@@ -95,7 +95,7 @@ To help you get started quickly, you can load a prebuilt example: a secure messa
 
 1. Download the demo file from this link: [**Secure Messaging Example**](https://drive.google.com/uc?export=download\&id=1trrDHuDG580yBX9NpVnYtyWUNN1naPwK)**.**
 2. Select **Load From File** and choose the file you just downloaded.
-3. atArchitect will populate the canvas with the full secure messaging blueprint.
+3. AI Architect will populate the canvas with the full secure messaging blueprint.
 
 {% hint style="info" %}
 The demo blueprint is a complete secure‑messaging example which gives you a fully populated map containing:
@@ -132,17 +132,19 @@ The prompt includes:
 This becomes the instruction set your LLM will follow to generate the full application.
 {% endhint %}
 
-### 5. Open Your IDE
+### 5. Open Your IDE, Plan and Code your App
 
 {% hint style="success" %}
-You can use any LLM or coding tool you like. We had great results with Claude Code, and will refer to it here.
+You can use any LLM or IDE you like. We recommend using [Visual Studio Code](https://code.visualstudio.com/) and will refer to it here.
 {% endhint %}
 
-Use an IDE that supports conversational code generation. Using an LLM inside your IDE allows it to create files, folders, dependencies, and project structure automatically. Visual Studio Code with Claude Code is recommended because it supports multi‑file generation, project planning, and iterative refinement.
+Visual Studio Code gives you the flexibility to work with a variety of LLMs, not just one. Depending on the extensions you install, you can choose from models like OpenAI, Gemini, Claude, Copilot, and others.&#x20;
 
-1. Paste the exported prompt directly into Claude Code. It will plan the project, create files, and set up the app. Approve the actions when prompted.
+To get started, you’ll need to create a new empty folder (without any spaces in the name) and set your LLM to **Plan Mode.** Starting in Plan Mode is important because it helps to ensure the LLM is going to build what you want it to build.
+
+1. Paste the exported prompt directly into the chat window. It will plan the project and present the plan to you. When you are happy, Proceed with implementation and it will create files, and set up the app.&#x20;
 2. You will be asked to confirm certain actions (file creation, folder setup, dependency installation).
-3. Don’t be surprised if the LLM says it has finished while the app is still incomplete, or if the first version isn’t perfect. This is an iterative process. The LLM builds the application in stages, allowing you to test each step and provide additional instructions. It will continue refining and completing the app based on your original prompt as you guide it through each iteration.
+3. The LLM may build the application in stages, allowing you to test each step and provide additional instructions. It will continue refining and completing the app based on your original prompt as you guide it through each iteration.
 
 {% hint style="info" %}
 The LLM will:
@@ -159,11 +161,10 @@ The LLM will:
 
 Once the code generation is complete:
 
-1. Follow the build instructions created by Claude Code.
-2. Run the app locally.
-3. When prompted, sign in using your two starter-pack Atsigns. If you need to access them log in to your [**Atsign Dashboard**](https://my.atsign.com/login).
-4. Complete onboarding.
-5. Test sending messages between the two Atsigns.
+1. Follow the build instructions created by your LLM.
+2. Run the app on two separate devices/simulators/emulators.
+3. When prompted, activate or sign into the app using your two starter-pack Atsigns, one for each device. If you need to access them, log into your [**Atsign Dashboard**](https://my.atsign.com/login).
+4. Test sending messages between the two Atsigns.
 
 {% hint style="info" %}
 This validates:
