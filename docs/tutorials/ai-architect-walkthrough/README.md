@@ -1,15 +1,27 @@
 ---
+description: >-
+  This walkthrough guides you through loading a Blueprint and exporting a prompt
+  using AI Architect, then using that blueprint to generate and run an
+  atPlatform app in your IDE.
 icon: arrow-progress
-cover:
-  light: ../../.gitbook/assets/Hero - atarchitect.svg
-  dark: ../../.gitbook/assets/Hero - atarchitect - dark.svg
-coverY: 0
-coverHeight: 497
 ---
 
 # AI Architect Walkthrough
 
-This walkthrough guides you through loading a Blueprint and exporting a prompt using AI Architect, then using that blueprint to generate and run an atPlatform app in your IDE.
+{% embed url="https://vimeo.com/1167932458" %}
+
+### Pre-requisite - Get Your Starter Pack Atsigns <a href="#step1_atarchitect" id="step1_atarchitect"></a>
+
+Before building or testing any atPlatform app, you need two Atsigns. These act as the identities your app will use during testing and development.
+
+1. &#x20;Visit [**my.atsign.com/starterpack**](https://my.atsign.com/starterpack)**.**
+2. &#x20;Verify your email and claim your two free starter-pack Atsigns.
+
+If you already have Atsigns, you can log into [**my.atsign.com/login**](https://my.atsign.com/login) to access them.
+
+{% hint style="info" %}
+These Atsigns will be used later when you run your generated app to test authentication and secure communication.
+{% endhint %}
 
 {% stepper %}
 {% step %}
@@ -44,19 +56,6 @@ Make a Blueprint for your own idea and repeat the process.
 {% endstepper %}
 
 ***
-
-### Pre-requisite - Get Your Starter Pack Atsigns <a href="#step1_atarchitect" id="step1_atarchitect"></a>
-
-Before building or testing any atPlatform app, you need two Atsigns. These act as the identities your app will use during testing and development.
-
-1. &#x20;Visit [**my.atsign.com/starterpack**](https://my.atsign.com/starterpack)**.**
-2. &#x20;Verify your email and claim your two free starter-pack Atsigns.
-
-If you already have Atsigns, you can log into [**my.atsign.com/login**](https://my.atsign.com/login) to access them.
-
-{% hint style="info" %}
-These Atsigns will be used later when you run your generated app to test authentication and secure communication.
-{% endhint %}
 
 ### 1. Open AI Architect and Load the Example Blueprint <a href="#open-ai-architect" id="open-ai-architect"></a>
 
