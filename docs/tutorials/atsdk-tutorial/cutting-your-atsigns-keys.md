@@ -4,7 +4,7 @@ description: It takes two to tango!
 
 # Cutting your Atsign keys
 
-To run through the tutorial you will need at least two Atsigns, so you can send and receive. You can get your Atsigns for free at [atsign.com](https://atsign.com/) or, if you like, purchase some that are more personal to you.&#x20;
+To complete this tutorial, you  need at least two Atsigns to send and receive data. You can purchase Atsigns at the [Atsign Registrar](http://my.atsign.com/go).&#x20;
 
 Once you have your Atsigns, you are ready to activate them, which means spinning up one atServer per Atsign and cutting your cryptographic keys for each Atsign. Sounds complicated, but it is easy! In fact, just a single command. In the terminal window type:
 
