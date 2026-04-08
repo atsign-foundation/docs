@@ -1,16 +1,17 @@
 ---
 description: An overview of Atsign's core pillars of technology
+icon: layer-group
 ---
 
 # atPlatform
 
 ## TL;DR
 
-The atPlatform allows people, entities and things to communicate privately and securely without having to know about the intricacies of the underlying IP network. The atProtocol is the application protocol used to communicate and atSigns are the addresses on the protocol. All cryptographic keys are cut at the edge by the atSign owner, meaning only the receiving and sending atSigns see data in the clear.
+The atPlatform allows people, entities and things to communicate privately and securely without having to know about the intricacies of the underlying IP network. The atPlatform Protocol is the application protocol used to communicate and Atsign are the addresses on the protocol. All cryptographic keys are cut at the edge by the Atsign owner, meaning only the receiving and sending Atsigns see data in the clear.
 
-The atPlatform can be used to send data synchronously or asynchronously and can be used as a data plane or a control plane or both simultaneously at Internet scale.
+The atPlatform can be used to send data synchronously or asynchronously, and can be used as a data plane, or a control plane, or both simultaneously at Internet scale.
 
-<figure><picture><source srcset="../../.gitbook/assets/dark.png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/light.png" alt="Diagram of Atsign&#x27;s Core Technology"></picture><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/Dark.svg" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/Light.svg" alt="Diagram of Atsign&#x27;s Core Technology"></picture><figcaption></figcaption></figure>
 
 <details>
 
@@ -26,7 +27,7 @@ The **atProtocol** is the _application layer protocol_ used to communicate with 
 
 ## atServer
 
-An atServer is both a personal data service for storing encrypted data owned by an atSign, and a rendezvous point for information exchange. An atServer is responsible for the delivery of encrypted information to other atServers, from which the owners of those atSigns can then retrieve the data.
+An atServer is both a personal data service for storing encrypted data owned by an Atsign, and a rendezvous point for information exchange. An atServer is responsible for the delivery of encrypted information to other atServers, from which the owners of those Atsigns can then retrieve the data.
 
 {% hint style="info" %}
 Unless explicitly made public, atServers only store encrypted data and do not have access to the cryptographic keys, nor the ability to decrypt the stored information.
@@ -49,17 +50,17 @@ Unless explicitly made public, atServers only store encrypted data and do not ha
 
 ## atDirectory
 
-In order for an atSign to communicate with another one on the internet, we need to locate the atServer that can send and receive information securely on its behalf.
+In order for an Atsign to communicate with another one on the internet, we need to locate the atServer that can send and receive information securely on its behalf.
 
-The location of an atServer is found using the atDirectory service (`root.atsign.org:64`). This directory returns the DNS address and port number of the atServer for any atSign that it has a record for. The atDirectory service contains no information about the owner of the atSign.
+The location of an atServer is found using the atDirectory service (`root.atsign.org:64`). This directory returns the DNS address and port number of the atServer for any Atsign that it has a record for. The atDirectory service contains no information about the owner of the Atsign.
 
-## atProtocol
+## atPlatform Protocol
 
 {% hint style="info" %}
-The atProtocol communicates via layer 7, the application layer of the OSI model, over TCP/IP.
+The atPlatform Protocol communicates via layer 7, the application layer of the OSI model, over TCP/IP.
 {% endhint %}
 
-The atProtocol is an application protocol that enables data sharing between atSigns. You can learn more about the atProtocol by reading the [specification](https://app.gitbook.com/o/Bf7bj1PZlU306XQWDaeE/s/OKcyQuTtJmcTiYSQrNYQ/). The atProtocol uses TCP/IP and TLS but does not specify how data itself is encrypted, that is the job of the atSDK and atClient libraries.
+The atPlatform Protocol is an application protocol that enables data sharing between Atsigns. You can learn more about the atPlatform Protocol by reading the [specification](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md). The atPlatform Protocol uses TCP/IP and TLS but does not specify how data itself is encrypted, that is the job of the atSDK and atClient libraries.
 
 ## atSDK
 

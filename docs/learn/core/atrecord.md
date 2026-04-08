@@ -1,15 +1,16 @@
 ---
 description: The format atServers use to store and share data.
+icon: books
 ---
 
 # atRecord
 
 {% hint style="info" %}
-At Atsign, whenever we mention the word "key" we are normally talking about a cryptographic key.
+Whenever we mention the word "key" we are normally talking about a cryptographic key.
 
 The main exception being the atKey, this is the "key" of a "key value pair" that makes up every atRecord.&#x20;
 
-It's unfortunate that the word "key" is polymorphic in computer science, and we have tried in the past to move to other words, but we have decided to stick with keys and the developer will have to understand the context of cryptographic key or key value pair (sorry!)
+It's unfortunate that the word "key" is polymorphic in computer science. We have tried in the past to move to other words, but we have decided to stick with "keys," and the developer will have to understand the context—whether it is a cryptographic key or key value pair (sorry!).
 {% endhint %}
 
 atRecords are the data records that are stored by the atServers. We use the common key-value pair format.&#x20;
@@ -42,7 +43,7 @@ A unique string used to represent the atRecord.
 
 #### Owner's atSign
 
-The owner (i.e. creator's) atSign for that particular atRecord. The shared by atSign of an atRecord is synonymous to the owner atSign of an atRecord.
+The owner (i.e. creator's) Atsign for that particular atRecord. The shared by Atsign of an atRecord is synonymous to the owner Atsign of an atRecord.
 
 <details>
 
@@ -54,10 +55,10 @@ The owner (i.e. creator's) atSign for that particular atRecord. The shared by at
 3. Allowed characters in an entity are: `[\w._,-"']`
 4. Namespace is mandatory in the current implementation of the protocol\
    i.e entity must follow the notation: `<identifier>.<namespace>`
-5. Cached atKeys should have a different owner than the current atSign
+5. Cached atKeys should have a different owner than the current Atsign
 6. Visibility scope and owner cannot be the same for a shared atKey
 7. Reserved atKeys cannot be [modified](../sdk/crud-operations.md) or [notified](../sdk/events.md)
-8. For newly created atKeys, the owner must match the current atSign
+8. For newly created atKeys, the owner must match the current Atsign
 
 </details>
 
@@ -88,7 +89,7 @@ The following is a list of reserved atIKeys which the atServer requires to funct
 
 **Public atKey**
 
-1. A `public` atKey with a record id of `location` shared by `@alice`. This atKey typically holds public data that any atSign can access.
+1. A `public` atKey with a record id of `location` shared by `@alice`. This atKey typically holds public data that any Atsign can access.
 
 `public:location@alice`
 
@@ -130,17 +131,23 @@ The following is a list of reserved atIKeys which the atServer requires to funct
 
 Metadata of the atRecord is also stored and describes the following properties of the atValue.
 
-<table data-header-hidden><thead><tr><th width="174.33333333333331"></th><th width="144"></th><th></th></tr></thead><tbody><tr><td><strong>Meta Attribute</strong></td><td><strong>Auto create?</strong></td><td><strong>Description</strong></td></tr><tr><td>availableFrom</td><td>Yes</td><td>A Date and Time derived from the ttb (now + ttb). A Key should be only available after availableFrom.</td></tr><tr><td>ccd</td><td>No</td><td>Indicates if a cached key needs to be deleted when the atSign user who has originally shared it deletes it.</td></tr><tr><td>createdBy</td><td>Yes</td><td>atSign that has created the key</td></tr><tr><td>createdOn</td><td>Yes</td><td>Date and time when the key has been created.</td></tr><tr><td>expiresOn</td><td>Yes</td><td>A Date and Time derived from the ttl (now + ttl). A Key should be auto deleted once it expires.</td></tr><tr><td>isBinary</td><td>No</td><td>True if the value is a binary value.</td></tr><tr><td>isCached</td><td>No</td><td>True if the key is cached.</td></tr><tr><td>isEncrypted</td><td>No</td><td>True if the value is encrypted.</td></tr><tr><td>refreshAt</td><td>No</td><td>A Date and Time derived from the ttr. The time at which the key gets refreshed.</td></tr><tr><td>sharedWith</td><td>No</td><td>atSign of the user with whom the key has been shared. Can be null if not shared with anyone.</td></tr><tr><td>updatedOn</td><td>Yes</td><td>Date and time when the key has been last updated.</td></tr><tr><td>ttb</td><td>No</td><td>Time to birth in milliseconds.</td></tr><tr><td>ttl</td><td>No</td><td>Time to live in milliseconds.</td></tr><tr><td>ttr</td><td>No</td><td>Time in milliseconds after which the cached key needs to be refreshed. A ttr of -1 indicates that the key can be cached forever. ttr of 0 indicates do not refresh. ttr of > 0 will refresh the key. ttr of null indicates the key is impossible to cache, hence, refreshing does not make sense (which has the same effect as a ttr of 0).</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="174.33333333333331"></th><th width="144"></th><th></th></tr></thead><tbody><tr><td><strong>Meta Attribute</strong></td><td><strong>Auto create?</strong></td><td><strong>Description</strong></td></tr><tr><td>availableFrom</td><td>Yes</td><td>A Date and Time derived from the ttb (now + ttb). A Key should be only available after availableFrom.</td></tr><tr><td>ccd</td><td>No</td><td>Indicates if a cached key needs to be deleted when the Atsign owner who has originally shared it deletes it.</td></tr><tr><td>createdBy</td><td>Yes</td><td>Atsign that has created the key</td></tr><tr><td>createdOn</td><td>Yes</td><td>Date and time when the key was  created.</td></tr><tr><td>expiresOn</td><td>Yes</td><td>A Date and Time derived from the ttl (now + ttl). A Key should be auto deleted once it expires.</td></tr><tr><td>isBinary</td><td>No</td><td>True if the value is a binary value.</td></tr><tr><td>isCached</td><td>No</td><td>True if the key is cached.</td></tr><tr><td>isEncrypted</td><td>No</td><td>True if the value is encrypted.</td></tr><tr><td>refreshAt</td><td>No</td><td>A Date and Time derived from the ttr. The time at which the key gets refreshed.</td></tr><tr><td>sharedWith</td><td>No</td><td>Atsign of the individual with whom the key has been shared. Can be null if not shared with anyone.</td></tr><tr><td>updatedOn</td><td>Yes</td><td>Date and time when the key was  last updated.</td></tr><tr><td>ttb</td><td>No</td><td>Time to birth in milliseconds.</td></tr><tr><td>ttl</td><td>No</td><td>Time to live in milliseconds.</td></tr><tr><td>ttr</td><td>No</td><td>Time in milliseconds after which the cached key needs to be refreshed. A ttr of -1 indicates that the key can be cached forever. ttr of 0 indicates do not refresh. ttr of > 0 will refresh the key. ttr of null indicates the key is impossible to cache, hence, refreshing does not make sense (which has the same effect as a ttr of 0).</td></tr></tbody></table>
 
 ## atValue
 
-Text or binary values can be saved in an atServer.&#x20;
+You can save text or binary values in an atServer.&#x20;
 
-**Small objects are fine to use the atServer but large objects should be used by reference.**
+**While the atServer is suitable for small objects, you should handle large objects by reference.**
 
-For example, derive a new encryption key, encypt a file, upload that file to location, then notify other atSigns of the location and the encyption key. This is how [atmospherePro ](https://atsign.com/apps/atmospherepro/)works.\
+For example, to share a large file:<br>
 
+1. Derive a new encryption key.
+2. Encrypt the file.
+3. Upload the file to a storage location.
+4. Notify other Atsigns of the location and the encryption key.
+
+This "by refrence" pattern is used in applications like [NoPorts](https://noports.com) to ensure efficient data transfer.&#x20;
 
 {% hint style="warning" %}
-The size of the value saved in an atServer is bound by the atProtocol's config parameter "maxBufferSize".
+The size of the value saved in an atServer is bound by the atPlatform Protocol's config parameter "maxBufferSize".
 {% endhint %}

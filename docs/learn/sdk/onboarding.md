@@ -10,7 +10,7 @@ description: How to authenticate to an atServer
 
 ### **Package Installation**
 
-In Dart we provide the[ at\_onboarding\_cli](https://pub.dev/packages/at\_onboarding\_cli) package which handles onboarding to the atServer via files stored in the \~/.atsign/keys directory
+In Dart we provide the[ at\_onboarding\_cli](https://pub.dev/packages/at_onboarding_cli) package which handles onboarding to the atServer via files stored in the \~/.atsign/keys directory
 
 Add the package to your project automatically using pub:
 
@@ -20,7 +20,7 @@ dart pub add at_onboarding_cli
 
 ### Usage
 
-Set up the [preferences](https://pub.dev/documentation/at\_onboarding\_cli/latest/at\_onboarding\_cli/AtOnboardingPreference-class.html) to onboard to the atServer.&#x20;
+Set up the [preferences](https://pub.dev/documentation/at_onboarding_cli/latest/at_onboarding_cli/AtOnboardingPreference-class.html) to onboard to the atServer.&#x20;
 
 ```dart
  AtOnboardingPreference atOnboardingConfig = AtOnboardingPreference()
@@ -35,7 +35,7 @@ Set up the [preferences](https://pub.dev/documentation/at\_onboarding\_cli/lates
     ..atProtocolEmitted = Version(2, 0, 0);
 ```
 
-Next get the onboardingService&#x20;
+Next, get the onboardingService.&#x20;
 
 ```dart
   AtOnboardingService onboardingService = AtOnboardingServiceImpl(
@@ -43,7 +43,7 @@ Next get the onboardingService&#x20;
       atServiceFactory: atServiceFactory);
 ```
 
-Finally wait to be onboarded, this returns true once complete.&#x20;
+Finally, wait to be onboarded. This returns true once complete.&#x20;
 
 ```dart
 await onboardingService.authenticate();
@@ -83,7 +83,7 @@ If you followed the [get-started.md](../../sdk/get-started.md "mention") guide f
 
 ### Package Installation
 
-In Flutter, we provide the [at\_onboarding\_flutter](https://pub.dev/packages/at\_onboarding\_flutter) package which handles secure management of these secret keys.
+In Flutter, we provide the [at\_onboarding\_flutter](https://pub.dev/packages/at_onboarding_flutter) package which handles secure management of these secret keys.
 
 Add the package to your project automatically using pub:
 
@@ -93,7 +93,7 @@ flutter pub add at_onboarding_flutter
 
 ### Usage
 
-Simply call the [`onboard`](https://pub.dev/documentation/at\_onboarding\_flutter/latest/at\_onboarding/AtOnboarding/onboard.html) method whenever you want your app to open the onboarding widget.
+Simply call the [`onboard`](https://pub.dev/documentation/at_onboarding_flutter/latest/at_onboarding/AtOnboarding/onboard.html) method whenever you want your app to open the onboarding widget.
 
 ```dart
 AtOnboardingResult onboardingResult = await AtOnboarding.onboard(
@@ -121,7 +121,7 @@ Then open the Advanced settings drop down and click `Generate New API Key`:
 {% tab title="C" %}
 ## C
 
-Find the full example on our [GitHub](https://github.com/atsign-foundation/at\_demos/tree/trunk/demos/get\_started\_c/1-authentication#1---authentication).
+Find the full example on our [GitHub](https://github.com/atsign-foundation/at_demos/tree/trunk/demos/get_started_c/1-authentication#1---authentication).
 
 ### 1. Fetch your atServer's address from the production atDirectory
 
@@ -241,7 +241,7 @@ atclient_free(&atclient);
 
 Here is an example application that authenticates my atSign `@jeremy_0`.
 
-This code is also available on our [GitHub](https://github.com/atsign-foundation/at\_demos/tree/trunk/demos/get\_started\_c/1-authentication#1---authentication).
+This code is also available on our [GitHub](https://github.com/atsign-foundation/at_demos/tree/trunk/demos/get_started_c/1-authentication#1---authentication).
 
 ```c
 #include <atclient/atclient.h>

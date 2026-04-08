@@ -2,7 +2,7 @@
 
 ## Open Source on GitHub
 
-The atPlaform and the atSDKs are all open souce and the code can be found on GitHub and downloaded from [Atsign Foundation](https://github.com/atsign-foundation). But we will start with some easy sample code to show how data can be shared and notifications can be sent between atSigns. These are the basic building blocks for powerful applications like [SSH No Ports](https://www.noports.com/) and graphical applications like [atmospherePro](https://atsign.com/apps/atmospherepro/), both of which are also opensource so you can see the code in action.
+The atPlaform and atSDKs are open source. You can find the source code on GitHub and downloaded from [Atsign Foundation](https://github.com/atsign-foundation). This tutorial starts with sample code to demonstrate how to share data and send notifications between Atsigns. These are the basic building blocks for powerful open-source applications like [NoPorts](https://www.noports.com/), which you can use as a reference to see the code in action.
 
 ## Clone the demo repo
 

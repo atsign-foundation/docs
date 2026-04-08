@@ -1,8 +1,8 @@
 # Table of contents
 
-* [🏠 Atsign Docs](README.md)
+* [Welcome](README.md)
 * [atPlatform](learn/core/README.md)
-  * [atSign](learn/core/atsign.md)
+  * [Atsign](learn/core/atsign.md)
   * [atRecord](learn/core/atrecord.md)
 * [atSDK](learn/sdk/README.md)
   * [Get Started](sdk/get-started.md)
@@ -15,20 +15,28 @@
     * [Connection Hooks](sdk/synchronization/connection-hooks.md)
 * [Infrastructure](infrastructure.md)
 
-## 🗒️ Tutorials
+## Tutorials
 
 * [Dart atSDK Walkthrough](tutorials/atsdk-tutorial/README.md)
   * [Using the atSDK with Dart](tutorials/atsdk-tutorial/using-the-atsdk-with-dart.md)
   * [Get sample code](tutorials/atsdk-tutorial/get-sample-code.md)
-  * [Cutting your atSigns keys](tutorials/atsdk-tutorial/cutting-your-atsigns-keys.md)
+  * [Cutting your Atsign keys](tutorials/atsdk-tutorial/cutting-your-atsigns-keys.md)
   * [Put and Get data asynchronously](tutorials/atsdk-tutorial/put-and-get-data-asynchronously.md)
-  * [Send and Receive data synchronously.](tutorials/atsdk-tutorial/send-and-receive-data-synchronously.md)
+  * [Send and Receive data synchronously](tutorials/atsdk-tutorial/send-and-receive-data-synchronously.md)
   * [Remote Procedure Calls (RPC)](tutorials/atsdk-tutorial/rpc.md)
   * [atTalk - Encrypted chat client](tutorials/atsdk-tutorial/attalk.md)
+* [AI Architect Walkthrough](tutorials/ai-architect-walkthrough/README.md)
+  * [Nodes and Connections](tutorials/ai-architect-walkthrough/nodes-and-connections.md)
 
-## Related pages
+## Important links
 
-* [Main site](https://atsign.com/)
-* [atProtocol specification](https://github.com/atsign-foundation/at\_protocol/blob/trunk/specification/at\_protocol\_specification.md)
-* [atSign Registrar](https://my.atsign.com/)
+* [atsign.com ](https://atsign.com/)
+* [Atsign Registrar](https://my.atsign.com/)
 * [NoPorts](https://noports.com)
+* [atPlatform Protocol Specs](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md)
+
+## SOCIALS
+
+* [GitHub](https://github.com/atsign-foundation)
+* [Discord](https://discord.atsign.com/)
+* [YouTube](https://www.youtube.com/c/AtsignCo?themeRefresh=1)

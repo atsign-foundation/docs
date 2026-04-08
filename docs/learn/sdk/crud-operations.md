@@ -6,20 +6,20 @@ description: How to do basic CRUD operations on an atServer
 
 {% tabs %}
 {% tab title="Flutter / Dart" %}
-In Dart, the AtClient is stored within the AtClientManager. Once an atSign has been [onboarded](onboarding.md), you will be able to access the AtClientManager for its associated atSign.
+In Dart, the AtClient is stored within the AtClientManager. Once an Atsign has been [onboarded](onboarding.md), you will be able to access the AtClientManager for its associated atSign.
 
 ### AtClientManager
 
-AtClientManager is a [singleton](https://en.wikipedia.org/wiki/Singleton\_pattern) model. When `AtClientManager.getInstance()` is called, it will get the AtClientManager instance for the last onboarded atSign.
+AtClientManager is a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) model. When `AtClientManager.getInstance()` is called, it will get the AtClientManager instance for the last onboarded Atsign.
 
 ```dart
 AtClientManager atClientManager = AtClientManager.getInstance();
 ```
 
 {% hint style="info" %}
-If you need simultaneous access to multiple atClients, you need to create a new [isolate](https://dart.dev/language/concurrency#how-isolates-work) for each additional atClient, and onboard its atSign within the isolate.
+If you need simultaneous access to multiple atClients, you need to create a new [isolate](https://dart.dev/language/concurrency#how-isolates-work) for each additional atClient, and onboard its Atsign within the isolate.
 
-An example of this pattern can be found in [at\_daemon\_server](https://github.com/atsign-foundation/at\_services/tree/trunk/packages/at\_daemon\_server/lib/src/server).
+An example of this pattern can be found in [at\_daemon\_server](https://github.com/atsign-foundation/at_services/tree/trunk/packages/at_daemon_server/lib/src/server).
 {% endhint %}
 
 ### AtClient
@@ -110,11 +110,11 @@ A regular expression used to filter the list of atKeys.
 
 _sharedBy_
 
-Filter the list of atKeys to only include ones shared by a particular atSign.
+Filter the list of atKeys to only include ones shared by a particular Atsign.
 
 _sharedWith_
 
-Filter the list of atKeys to only include ones shared with a particular atSign.
+Filter the list of atKeys to only include ones shared with a particular Atsign.
 
 _showHiddenKeys_
 
@@ -179,49 +179,49 @@ See [#additional-features](crud-operations.md#additional-features "mention") to 
 
 ### API Docs
 
-You can find the API reference for the entire package available on [pub](https://pub.dev/documentation/at\_client/latest/).
+You can find the API reference for the entire package available on [pub](https://pub.dev/documentation/at_client/latest/).
 
-The `AtClient` class API reference is available [here](https://pub.dev/documentation/at\_client/latest/at\_client/AtClient-class.html).
+The `AtClient` class API reference is available [here](https://pub.dev/documentation/at_client/latest/at_client/AtClient-class.html).
 {% endtab %}
 
 {% tab title="C" %}
 ## C
 
-You can find all of these examples on our [GitHub](https://github.com/atsign-foundation/at\_demos/tree/trunk/demos/get\_started\_c).
+You can find all of these examples on our [GitHub](https://github.com/atsign-foundation/at_demos/tree/trunk/demos/get_started_c).
 
 ### Table of Contents
 
 * [#introduction](crud-operations.md#introduction "mention")
 * [#put-public-atkey](crud-operations.md#put-public-atkey "mention")
   * [#id-1.-create-public-atkey](crud-operations.md#id-1.-create-public-atkey "mention")
-  * [#id-2.-call-atclient\_put\_public\_key](crud-operations.md#id-2.-call-atclient\_put\_public\_key "mention")
+  * [#id-2.-call-atclient\_put\_public\_key](crud-operations.md#id-2.-call-atclient_put_public_key "mention")
   * [#example-application](crud-operations.md#example-application "mention")
 * [#put-self-atkey](crud-operations.md#put-self-atkey "mention")
   * [#id-1.-create-a-self-atkey](crud-operations.md#id-1.-create-a-self-atkey "mention")
-  * [#id-2.-call-atclient\_put\_self\_key](crud-operations.md#id-2.-call-atclient\_put\_self\_key "mention")
+  * [#id-2.-call-atclient\_put\_self\_key](crud-operations.md#id-2.-call-atclient_put_self_key "mention")
   * [#example-application-1](crud-operations.md#example-application-1 "mention")
 * [#put-shared-atkey](crud-operations.md#put-shared-atkey "mention")
   * [#id-1.-create-a-shared-atkey](crud-operations.md#id-1.-create-a-shared-atkey "mention")
-  * [#id-2.-call-atclient\_put\_shared\_key](crud-operations.md#id-2.-call-atclient\_put\_shared\_key "mention")
+  * [#id-2.-call-atclient\_put\_shared\_key](crud-operations.md#id-2.-call-atclient_put_shared_key "mention")
   * [#example-application-2](crud-operations.md#example-application-2 "mention")
 * [#get-public-atkey](crud-operations.md#get-public-atkey "mention")
   * [#id-1.-create-public-atkey-1](crud-operations.md#id-1.-create-public-atkey-1 "mention")
-  * [#id-2.-call-atclient\_get\_public\_key](crud-operations.md#id-2.-call-atclient\_get\_public\_key "mention")
+  * [#id-2.-call-atclient\_get\_public\_key](crud-operations.md#id-2.-call-atclient_get_public_key "mention")
   * [#id-3.-free-value](crud-operations.md#id-3.-free-value "mention")
   * [#example-application-3](crud-operations.md#example-application-3 "mention")
 * [#get-self-atkey](crud-operations.md#get-self-atkey "mention")
   * [#id-1.-create-a-self-atkey-1](crud-operations.md#id-1.-create-a-self-atkey-1 "mention")
-  * [#id-2.-call-atclient\_get\_self\_key](crud-operations.md#id-2.-call-atclient\_get\_self\_key "mention")
+  * [#id-2.-call-atclient\_get\_self\_key](crud-operations.md#id-2.-call-atclient_get_self_key "mention")
   * [#id-3.-free-value-1](crud-operations.md#id-3.-free-value-1 "mention")
   * [#example-application-4](crud-operations.md#example-application-4 "mention")
 * [#get-shared-atkey](crud-operations.md#get-shared-atkey "mention")
   * [#id-1.-create-a-shared-atkey-1](crud-operations.md#id-1.-create-a-shared-atkey-1 "mention")
-  * [#id-2.-call-atclient\_get\_shared\_key](crud-operations.md#id-2.-call-atclient\_get\_shared\_key "mention")
+  * [#id-2.-call-atclient\_get\_shared\_key](crud-operations.md#id-2.-call-atclient_get_shared_key "mention")
   * [#id-3.-free-value-2](crud-operations.md#id-3.-free-value-2 "mention")
   * [#example-application-5](crud-operations.md#example-application-5 "mention")
 * [#delete-an-atkey](crud-operations.md#delete-an-atkey "mention")
   * [#id-1.-create-an-atkey](crud-operations.md#id-1.-create-an-atkey "mention")
-  * [#id-2.-call-atclient\_delete](crud-operations.md#id-2.-call-atclient\_delete "mention")
+  * [#id-2.-call-atclient\_delete](crud-operations.md#id-2.-call-atclient_delete "mention")
   * [#example-application-6](crud-operations.md#example-application-6 "mention")
 * [#request-options](crud-operations.md#request-options "mention")
 
@@ -235,7 +235,7 @@ If you are unfamiliar with the different atKey types, check out our documentatio
 
 #### 1. Create Public AtKey
 
-First, create a public atKey. It is important to note that the `shared_by` atSign should be the same as the authenticated atSign in the application.
+First, create a public atKey. It is important to note that the `shared_by` Atsign should be the same as the authenticated Atsign in the application.
 
 ```c
 atclient_atkey my_public_atkey;
@@ -253,7 +253,7 @@ if (atclient_atkey_create_public_key(&my_public_atkey, atkey_key, atkey_shared_b
 
 #### 2. Call \`atclient\_put\_public\_key\`
 
-Next, simply \*put\* the value into your atServer. Since we are putting a public value into our atServer, no data will be encrypted and this data will be available for any atSign to get.
+Next, simply \*put\* the value into your atServer. Since we are putting a public value into our atServer, no data will be encrypted and this data will be available for any Atsign to get.
 
 We will pass `NULL` into the request\_options and commit\_id parameters because we want to use the default options for now and we don't particularly care about the commit\_id that it returns, but you could receive it if you would like.
 
@@ -366,7 +366,7 @@ if (atclient_atkey_create_self_key(&my_self_atkey, atkey_key, atkey_shared_by, a
 
 #### 2. Call \`atclient\_put\_self\_key\`
 
-This will put a value specially encrypted for your atServer that only the atSign's atKeys can decrypt.
+This will put a value specially encrypted for your atServer that only the Atsign's atKeys can decrypt.
 
 We will pass `NULL` into the request\_options and commit\_id parameters because we want to use the default options for now and we don't particularly care about the commit\_id that it returns, but you could receive it if you would like.
 
@@ -437,7 +437,7 @@ int main()
     const char *atkey_value = "123-456-7890";
 
     /*
-     * atclient_put_self_key lets you put a key-value pair in your atSign's atServer.
+     * atclient_put_self_key lets you put a key-value pair in your Atsign's atServer.
      * For our purposes, we will pass `NULL` for the request options and the commit id. 
      * We want to use the default options and we don't want to receive and
      * store the commit id.
@@ -480,7 +480,7 @@ if (atclient_atkey_create_shared_key(&my_shared_atkey, atkey_key, atkey_shared_b
 
 #### 2. Call \`atclient\_put\_shared\_key\`
 
-This function will put our string value into the atServer. Since we are using a Shared atKey, that means only the `shared_by` and `shared_with` atSign will be able to decrypt this value.&#x20;
+This function will put our string value into the atServer. Since we are using a Shared atKey, that means only the `shared_by` and `shared_with` Atsign will be able to decrypt this value.&#x20;
 
 We will pass `NULL` into the request\_options and commit\_id parameters because we want to use the default options for now and we don't particularly care about the commit\_id that it returns, but you could receive it if you would like.
 
@@ -551,7 +551,7 @@ int main()
     const char *atkey_value = "123-456-7890";
 
     /*
-     * atclient_put_self_key lets you put a key-value pair in your atSign's atServer.
+     * atclient_put_self_key lets you put a key-value pair in your Atsign's atServer.
      * For our purposes, we will pass `NULL` for the request options and the commit id. 
      * We want to use the default options and we don't want to receive and
      * store the commit id.
@@ -577,7 +577,7 @@ exit:
 
 #### 1. Create Public AtKey
 
-First, create a public atKey. It is important to note that the `shared_by` atSign should be the same as the authenticated atSign in the application.
+First, create a public atKey. It is important to note that the `shared_by` Atsign should be the same as the authenticated Atsign in the application.
 
 ```c
 atclient_atkey my_public_atkey;
@@ -955,7 +955,7 @@ exit:
 
 #### 1. Create an AtKey
 
-First step is to create the atKey that you wish to delete. This can be of any atKey type (public, self, or shared). What is important to note is that you can only delete an atKey that you own (which means that the authenticated atSign is the same as the shared\_by atSign). This should be obvious because you can only delete atKeys that have once been created by you. Only the rightful owners of the atKey that was created can delete it.
+First step is to create the atKey that you wish to delete. This can be of any atKey type (public, self, or shared). What is important to note is that you can only delete an atKey that you own (which means that the authenticated Atsign is the same as the shared\_by Atsign). This should be obvious because you can only delete atKeys that have once been created by you. Only the rightful owners of the atKey that was created can delete it.
 
 For the sake of this demo, we will create a Shared atKey.
 
@@ -1044,8 +1044,8 @@ int main()
     }
 
     /*
-     * `atclient_delete` will delete this shared atkey from our atServer. It is important to note that only the `shared_by` atSign can delete the shared atKey
-     * When deleting, the `shared_by` atSign should always be the authenticated atSign in the `atclient` object.
+     * `atclient_delete` will delete this shared atkey from our atServer. It is important to note that only the `shared_by` Atsign can delete the shared atKey
+     * When deleting, the `shared_by` Atsign should always be the authenticated Atsign in the `atclient` object.
      * We will pass `NULL` to the request_options and commit_id parameters because we want to use the default request_options and we don't care about the
      * commit_id we get back.
      */
