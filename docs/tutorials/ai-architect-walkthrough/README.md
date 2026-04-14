@@ -161,4 +161,4 @@ These three decisions form the foundation of your application’s architecture a
 
 ### Support and Further Help
 
-_If you run into issues, have questions about any step, or want to go deeper into building with the atPlatform, the Atsign team can help. Contact support@atsign.com._
+_If you run into issues, have questions about any step, or want to go deeper into building with the atPlatform, the Atsign team can help. Contact support.team@atsign.com._
