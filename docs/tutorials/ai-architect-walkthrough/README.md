@@ -62,7 +62,7 @@ Make a Blueprint for your own idea and repeat the process.
 AI Architect is the visual blueprinting tool used to design your app’s structure before generating the LLM prompt.
 
 1. Go to [**aiarchitect.atsign.com**](https://aiarchitect.atsign.com/). This opens the workspace where you create or load a Blueprint. The Blueprint you create here becomes the input for your LLM-powered code generation.
-2. Click on **Start with Demo Blueprint** to load our prebuilt example Blueprint. AI Architect will populate the canvas.
+2. Click on **Start with Example Blueprint** and select the Secure Messaging Blueprint to load our prebuilt example Blueprint. AI Architect will populate the canvas.
 
 {% hint style="info" %}
 A Blueprint is a visual map of your application. Each box represents a node. This could be a person, a process, an AI agent, a service, or any other entity involved in your system. The lines between nodes show how information flows from one part of the system to another.
