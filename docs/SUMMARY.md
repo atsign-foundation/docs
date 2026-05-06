@@ -1,32 +1,43 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [atPlatform](learn/core/README.md)
-  * [Atsign](learn/core/atsign.md)
-  * [atRecord](learn/core/atrecord.md)
-* [atSDK](learn/sdk/README.md)
-  * [Get Started](sdk/get-started.md)
-  * [Authentication](learn/sdk/onboarding.md)
-  * [atKey Reference](learn/sdk/atid-reference.md)
-  * [CRUD Operations](learn/sdk/crud-operations.md)
-  * [Notifications](learn/sdk/events.md)
-  * [Additional Features](sdk/synchronization/README.md)
-    * [Synchronization](sdk/synchronization/synchronization.md)
-    * [Connection Hooks](sdk/synchronization/connection-hooks.md)
-* [Infrastructure](infrastructure.md)
 
-## Tutorials
+## ATPlatform
 
-* [Dart atSDK Walkthrough](tutorials/atsdk-tutorial/README.md)
-  * [Using the atSDK with Dart](tutorials/atsdk-tutorial/using-the-atsdk-with-dart.md)
-  * [Get sample code](tutorials/atsdk-tutorial/get-sample-code.md)
-  * [Cutting your Atsign keys](tutorials/atsdk-tutorial/cutting-your-atsigns-keys.md)
-  * [Put and Get data asynchronously](tutorials/atsdk-tutorial/put-and-get-data-asynchronously.md)
-  * [Send and Receive data synchronously](tutorials/atsdk-tutorial/send-and-receive-data-synchronously.md)
-  * [Remote Procedure Calls (RPC)](tutorials/atsdk-tutorial/rpc.md)
-  * [atTalk - Encrypted chat client](tutorials/atsdk-tutorial/attalk.md)
-* [AI Architect Walkthrough](tutorials/ai-architect-walkthrough/README.md)
-  * [Nodes and Connections](tutorials/ai-architect-walkthrough/nodes-and-connections.md)
+* [atPlatform Overview](atplatform/core.md)
+* [Atsign](atplatform/atsign.md)
+* [atRecord](atplatform/atrecord.md)
+* [Infrastructure](atplatform/infrastructure.md)
+
+## atSDK
+
+* [atSDK Overview](atsdk/sdk/README.md)
+  * [Get Started](atsdk/sdk/get-started.md)
+  * [Authentication](atsdk/sdk/onboarding.md)
+  * [atKey Reference](atsdk/sdk/atid-reference.md)
+  * [CRUD Operations](atsdk/sdk/crud-operations.md)
+  * [Notifications](atsdk/sdk/events.md)
+  * [Additional Features](atsdk/sdk/synchronization/README.md)
+    * [Synchronization](atsdk/sdk/synchronization/synchronization.md)
+    * [Connection Hooks](atsdk/sdk/synchronization/connection-hooks.md)
+* [atSDK Walkthroughs](atsdk/atsdk-walkthroughs/README.md)
+  * [Dart atSDK Walkthrough](atsdk/atsdk-walkthroughs/atsdk-tutorial/README.md)
+    * [Using the atSDK with Dart](atsdk/atsdk-walkthroughs/atsdk-tutorial/using-the-atsdk-with-dart.md)
+    * [Get sample code](atsdk/atsdk-walkthroughs/atsdk-tutorial/get-sample-code.md)
+    * [Cutting your Atsign keys](atsdk/atsdk-walkthroughs/atsdk-tutorial/cutting-your-atsigns-keys.md)
+    * [Put and Get data asynchronously](atsdk/atsdk-walkthroughs/atsdk-tutorial/put-and-get-data-asynchronously.md)
+    * [Send and Receive data synchronously](atsdk/atsdk-walkthroughs/atsdk-tutorial/send-and-receive-data-synchronously.md)
+    * [Remote Procedure Calls (RPC)](atsdk/atsdk-walkthroughs/atsdk-tutorial/rpc.md)
+    * [atTalk - Encrypted chat client](atsdk/atsdk-walkthroughs/atsdk-tutorial/attalk.md)
+
+## AI Architect
+
+* [AI Architect Overview](ai-architect/ai-architect-overview/README.md)
+  * [Nodes and Connections](ai-architect/ai-architect-overview/nodes-and-connections.md)
+* [AI Architect Walkthroughs](ai-architect/ai-architect-walkthroughs/README.md)
+  * [Getting Started with AI Architect](ai-architect/ai-architect-walkthroughs/getting-started-with-ai-architect.md)
+  * [How to Think When Creating a Blueprint](ai-architect/ai-architect-walkthroughs/how-to-think-when-creating-a-blueprint.md)
+* [Release Notes](ai-architect/release-notes.md)
 
 ## Important links
 
