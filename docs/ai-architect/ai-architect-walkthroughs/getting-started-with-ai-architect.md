@@ -107,7 +107,7 @@ To get started, you’ll need to create a new empty folder and set your LLM to *
 
 1. Paste the exported prompt directly into the chat window. It will plan the project and present the plan to you. When you are happy, Proceed with implementation and it will create files, and set up the app.&#x20;
 2. You will be asked to confirm certain actions (file creation, folder setup, dependency installation).
-3. The LLM will build a **Dart and Flutter app**. It may build the application in stages, allowing you to test each step and provide additional instructions. It will continue refining and completing the app based on your original prompt as you guide it through each iteration.
+3. The LLM will build a [**Dart and Flutter app**](https://docs.flutter.dev/learn/pathway/quick-install). It may build the application in stages, allowing you to test each step and provide additional instructions. It will continue refining and completing the app based on your original prompt as you guide it through each iteration.
 
 {% hint style="info" %}
 The LLM will:
