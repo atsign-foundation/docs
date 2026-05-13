@@ -4,7 +4,8 @@
 
 ## ATPlatform
 
-* [atPlatform Overview](atplatform/core.md)
+* [atPlatform Overview](atplatform/core/README.md)
+  * [Frequently Asked Questions](atplatform/core/frequently-asked-questions.md)
 * [Atsign](atplatform/atsign.md)
 * [atRecord](atplatform/atrecord.md)
 * [Infrastructure](atplatform/infrastructure.md)
