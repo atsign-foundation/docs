@@ -303,7 +303,7 @@ The above `CMakeLists.txt` will use FetchContent to download the C atSDK for you
 
 Inside your project folder, create a new file called `main.c`
 
-Change the line `#define ATSIGN "@jeremy_0"` to the atSign that you have keys to. For example, if you own an Atsign `@alice` and have its keys in the correct directory `~/.atsign/keys/@alice_key.atKeys`, then I would change this line in my code to `#define ATSIGN "@alice"`
+Change the line `#define ATSIGN "@jeremy_0"` to the Atsign that you have keys to. For example, if you own an Atsign `@alice` and have its keys in the correct directory `~/.atsign/keys/@alice_key.atKeys`, then I would change this line in my code to `#define ATSIGN "@alice"`
 
 ```c
 #include <atclient/atclient.h>

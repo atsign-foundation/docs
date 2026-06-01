@@ -5,7 +5,7 @@ icon: gear-complex-code
 
 # Infrastructure
 
-The atPlatform is designed to be distributed and allows people to run their own infrastructure for atDirectory and atServer services on their own networks. Here, we show how at a high level how Atsign runs the Internet atPlatform Infrastructure.
+The Atsign Platform is designed to be distributed and allows people to run their own infrastructure for atDirectory and atServer services on their own networks. Here, we show how at a high level how Atsign runs the Internet Atsign Platform Infrastructure.
 
 Atsign services are monitored by an independent third party for uptime and can be seen here:
 

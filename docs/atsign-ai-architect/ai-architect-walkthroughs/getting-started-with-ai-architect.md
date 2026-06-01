@@ -1,9 +1,27 @@
 ---
 description: >-
   This walkthrough guides you through loading a Blueprint and exporting a prompt
-  using AI Architect, then using that blueprint to generate and run an
-  atPlatform app in your IDE.
+  using AI Architect, then using that blueprint to generate and run an Atsign
+  Platform app in your IDE.
 icon: arrow-progress
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Getting Started with AI Architect
@@ -82,7 +100,7 @@ The prompt includes:
 * A high‑level application description
 * A breakdown of all nodes (people, processes, things)
 * A breakdown of all connections and their types
-* atPlatform roles for each component
+* Atsign Platform roles for each component
 * Implementation notes for each node
 * Stream/notification patterns for each connection
 * Required dependencies and initialization code
@@ -162,4 +180,4 @@ For help with this follow our walkthrough on [**How to Think When Creating a Blu
 
 ### Support and Further Help
 
-_If you run into issues, have questions about any step, or want to go deeper into building with the atPlatform, the Atsign team can help. Contact support.team@atsign.com._
+_If you run into issues, have questions about any step, or want to go deeper into building with Atsign Platform, the Atsign team can help. Contact support.team@atsign.com._

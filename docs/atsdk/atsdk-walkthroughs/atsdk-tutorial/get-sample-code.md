@@ -2,7 +2,7 @@
 
 ## Open Source on GitHub
 
-The atPlaform and atSDKs are open source. You can find the source code on GitHub and downloaded from [Atsign Foundation](https://github.com/atsign-foundation). This tutorial starts with sample code to demonstrate how to share data and send notifications between Atsigns. These are the basic building blocks for powerful open-source applications like [NoPorts](https://www.noports.com/), which you can use as a reference to see the code in action.
+Atsign Platform and atSDKs are open source. You can find the source code on GitHub and downloaded from [Atsign Foundation](https://github.com/atsign-foundation). This tutorial starts with sample code to demonstrate how to share data and send notifications between Atsigns. These are the basic building blocks for powerful open-source applications like [NoPorts](https://www.noports.com/), which you can use as a reference to see the code in action.
 
 ## Clone the demo repo
 

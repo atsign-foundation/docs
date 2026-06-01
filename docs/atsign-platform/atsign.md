@@ -26,5 +26,5 @@ Atsigns start at $10 per year. You can purchase and manage your Atsigns at the [
 There are two ways to generate the `.atKeys` file for an Atsign:
 
 * When using the command line, .atKeys files are generated and stored in the `~/.atsign/keys` directory. [at\_onboarding\_cli](https://github.com/atsign-foundation/at_client_sdk/blob/trunk/packages/at_onboarding_cli/README.md): Use the `at_activate` command to activate an Atsign you have purchased.
-* If using an atPlatform application, .atKeys are stored in the encrypted keychains provided by the operating system. Most applications allow you to export your .atKeys file for backup or for use on other devices.
+* If using an Atsign Platform application, .atKeys are stored in the encrypted keychains provided by the operating system. Most applications allow you to export your .atKeys file for backup or for use on other devices.
 

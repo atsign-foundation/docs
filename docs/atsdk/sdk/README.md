@@ -5,7 +5,7 @@ icon: toolbox
 
 # atSDK Overview
 
-The atSDK is the best way to embed the atPlatform Protocol into new or existing software. This can be anything from a graphical desktop application to firmware flashed on a microcontroller.
+The atSDK is the best way to embed the Atsign Protocol into new or existing software. This can be anything from a graphical desktop application to firmware flashed on a microcontroller.
 
 ### Sections
 

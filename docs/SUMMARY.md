@@ -2,13 +2,13 @@
 
 * [Welcome](README.md)
 
-## ATPlatform
+## Atsign Platform
 
-* [atPlatform Overview](atplatform/core/README.md)
-  * [Frequently Asked Questions](atplatform/core/frequently-asked-questions.md)
-* [Atsign](atplatform/atsign.md)
-* [atRecord](atplatform/atrecord.md)
-* [Infrastructure](atplatform/infrastructure.md)
+* [Atsign Platform Overview](atsign-platform/core/README.md)
+  * [Frequently Asked Questions](atsign-platform/core/frequently-asked-questions.md)
+* [Atsign](atsign-platform/atsign.md)
+* [atRecord](atsign-platform/atrecord.md)
+* [Infrastructure](atsign-platform/infrastructure.md)
 
 ## atSDK
 
@@ -31,14 +31,14 @@
     * [Remote Procedure Calls (RPC)](atsdk/atsdk-walkthroughs/atsdk-tutorial/rpc.md)
     * [atTalk - Encrypted chat client](atsdk/atsdk-walkthroughs/atsdk-tutorial/attalk.md)
 
-## AI Architect
+## Atsign AI Architect
 
-* [AI Architect Overview](ai-architect/ai-architect-overview/README.md)
-  * [Nodes and Connections](ai-architect/ai-architect-overview/nodes-and-connections.md)
-* [AI Architect Walkthroughs](ai-architect/ai-architect-walkthroughs/README.md)
-  * [Getting Started with AI Architect](ai-architect/ai-architect-walkthroughs/getting-started-with-ai-architect.md)
-  * [How to Think When Creating a Blueprint](ai-architect/ai-architect-walkthroughs/how-to-think-when-creating-a-blueprint.md)
-* [Release Notes](ai-architect/release-notes.md)
+* [Atsign AI Architect Overview](atsign-ai-architect/atsign-ai-architect-overview/README.md)
+  * [Nodes and Connections](atsign-ai-architect/atsign-ai-architect-overview/nodes-and-connections.md)
+* [AI Architect Walkthroughs](atsign-ai-architect/ai-architect-walkthroughs/README.md)
+  * [Getting Started with AI Architect](atsign-ai-architect/ai-architect-walkthroughs/getting-started-with-ai-architect.md)
+  * [How to Think When Creating a Blueprint](atsign-ai-architect/ai-architect-walkthroughs/how-to-think-when-creating-a-blueprint.md)
+* [Release Notes](atsign-ai-architect/release-notes.md)
 
 ## Important links
 

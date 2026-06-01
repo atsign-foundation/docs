@@ -6,7 +6,7 @@ icon: question
 
 ## Frequently Asked Questions
 
-This page answers common questions about the AtPlatform: how Atsigns, AtServers, and the AtDirectory work together to provide end-to-end encrypted, identity-first communication.
+This page answers common questions about Atsign Platform: how Atsigns, atServers, and the atDirectory work together to provide end-to-end encrypted, identity-first communication.
 
 ### Atsign
 
@@ -22,58 +22,58 @@ An Atsign is used to securely exchange information with other Atsigns without ri
 
 Atsigns can be made of any combination of UTF-7 characters up to 55 characters in length, provided they are not already registered. This provides a name space of roughly 10^224 Atsigns. Some combinations may be unavailable or restricted (e.g. trademarked names, already registered Atsigns).
 
-### AtServers
+### atServers
 
-#### What is an AtServer?
+#### What is an atServer?
 
-An AtServer is a private datastore for encrypted data owned by a single Atsign, and a rendezvous point for information exchange. It is responsible for delivering encrypted information to other AtServers, where the recipient can then retrieve it. **An AtServer only stores encrypted information and never has access to the cryptographic keys.**
+An atServer is a private datastore for encrypted data owned by a single Atsign, and a rendezvous point for information exchange. It is responsible for delivering encrypted information to other atServers, where the recipient can then retrieve it. **An atServer only stores encrypted information and never has access to the cryptographic keys.**
 
-#### What functions does an AtServer perform?
+#### What functions does an atServer perform?
 
-An AtServer provides:
+An atServer provides:
 
 * Cryptographic authentication of client devices
-* Cryptographic authentication of other AtServers
+* Cryptographic authentication of other atServers
 * Persistence of encrypted data on behalf of the controlling Atsign
 * Caching of data shared by others with the controlling Atsign
-* Notification of data change events to clients and other AtServers
-* Monitoring of notifications from other AtServers
+* Notification of data change events to clients and other atServers
+* Monitoring of notifications from other atServers
 * Synchronization of data across multiple clients (edge devices)
-* TLS wire encryption from clients to AtServers
-* Mutually authenticated TLS 1.2/1.3 wire encryption between AtServers
+* TLS wire encryption from clients to atServers
+* Mutually authenticated TLS 1.2/1.3 wire encryption between atServers
 
-#### What does an AtServer consist of?
+#### What does an atServer consist of?
 
-An AtServer is a small dockerized service that can be deployed almost anywhere. It requires persistent storage and publicly addressable network connectivity. Each Atsign gets its own isolated AtServer instance.
+An atServer is a small dockerized service that can be deployed almost anywhere. It requires persistent storage and publicly addressable network connectivity. Each Atsign gets its own isolated atServer instance.
 
 This distributed, single-tenant architecture means there is no centralized service mixing data from many Atsigns together — unlike traditional multi-tenant web services that present an attractive target for hackers.
 
-#### Where are AtServers hosted?
+#### Where are atServers hosted?
 
 There are two options:
 
-* **Atsign-hosted AtServers** — Run by Atsign in the cloud with automated deployment and maintenance. Atsign cannot see private data because it is encrypted with keys Atsign never has access to.
-* **Self-hosted AtServers** — Run by the Atsign owner on platforms ranging from a Raspberry Pi to GCP, AWS, or on-premises infrastructure.
+* **Atsign-hosted atServers** — Run by Atsign in the cloud with automated deployment and maintenance. Atsign cannot see private data because it is encrypted with keys Atsign never has access to.
+* **Self-hosted atServers** — Run by the Atsign owner on platforms ranging from a Raspberry Pi to GCP, AWS, or on-premises infrastructure.
 
-#### How does authentication work with an AtServer?
+#### How does authentication work with an atServer?
 
 The very first authentication uses a shared secret (a "cram key") (CRAM stands for Challenge Response Authentication Mechanism). After that, an RSA-2048 or ECC key pair is generated and used for all subsequent authentication via PKAM (Public Key Authentication Mechanism).
 
-To create additional keys that grant access to the same AtServer with namespace restrictions, you can use APKAM (Application Public Key Authentication Mechanism). APKAM allows individual applications to authenticate with their own keypair, scoped to only the namespaces they need.
+To create additional keys that grant access to the same atServer with namespace restrictions, you can use APKAM (Application Public Key Authentication Mechanism). APKAM allows individual applications to authenticate with their own keypair, scoped to only the namespaces they need.
 
-#### How do AtServers protect the data they hold?
+#### How do atServers protect the data they hold?
 
-Each AtServer holds data for a single owner, which limits the appeal of an attack. If an attacker did gain access to an AtServer's datastore, all private data is encrypted with cryptographic keys that the AtServer does not hold. It is therefore _provably true_ that the data cannot be decrypted from the AtServer alone — unlike systems that rely on policy and procedure to safeguard centralized data.
+Each atServer holds data for a single owner, which limits the appeal of an attack. If an attacker did gain access to an atServer's datastore, all private data is encrypted with cryptographic keys that the atServer does not hold. It is therefore _provably true_ that the data cannot be decrypted from the atServer alone — unlike systems that rely on policy and procedure to safeguard centralized data.
 
-#### What is the size of an AtServer? How much can it store?
+#### What is the size of an atServer? How much can it store?
 
-An AtServer can store as much data as its underlying storage system allows. For Atsign-hosted AtServers, the default configuration allocates 50MB of memory to the docker container, which is sufficient for most Atsigns representing people or things. Busier Atsigns (e.g. for companies) can be allocated more CPU and RAM. Contact us at support@atsign.com
+An atServer can store as much data as its underlying storage system allows. For Atsign-hosted atServers, the default configuration allocates 50MB of memory to the docker container, which is sufficient for most Atsigns representing people or things. Busier Atsigns (e.g. for companies) can be allocated more CPU and RAM. Contact us at support@atsign.com
 
-### AtDirectory
+### atDirectory
 
 #### What does "resolvable address" mean for an Atsign?
 
-For an Atsign to communicate with another, it needs to locate the AtServer that handles its traffic. This lookup is done through the AtDirectory service (`root.atsign.org`), which returns the DNS address and port number of the AtServer for any Atsign it has a record for. The AtDirectory contains no information about the owner of the Atsign.
+For an Atsign to communicate with another, it needs to locate the atServer that handles its traffic. This lookup is done through the atDirectory service (`root.atsign.org`), which returns the DNS address and port number of the atServer for any Atsign it has a record for. The atDirectory contains no information about the owner of the Atsign.
 
 ### Edge Devices
 
@@ -81,31 +81,31 @@ For an Atsign to communicate with another, it needs to locate the AtServer that 
 
 An edge device is any device located at the edge of a network that produces or consumes data — smartphones, personal computers, servers, IoT devices, gateways, etc.
 
-Edge-to-edge encryption is an extension of end-to-end encryption: data is encrypted at all times during transmission and is only decrypted on edge devices. Atsigns store their cryptographic keys exclusively on the edge device. The AtDirectory is never used to route personal data — it is only used for DNS lookups. AtServers transmit, receive, and store encrypted data without any access to the keys needed to decrypt it. Only data that has been intentionally made public is stored in the clear.
+Edge-to-edge encryption is an extension of end-to-end encryption: data is encrypted at all times during transmission and is only decrypted on edge devices. Atsigns store their cryptographic keys exclusively on the edge device. The atDirectory is never used to route personal data — it is only used for DNS lookups. atServers transmit, receive, and store encrypted data without any access to the keys needed to decrypt it. Only data that has been intentionally made public is stored in the clear.
 
-#### How does the AtPlatform eliminate network attack surfaces from devices?
+#### How does Atsign Platform eliminate network attack surfaces from devices?
 
-All connections from an AtPlatform-enabled device are _outbound_ to its AtServer. Inbound communications must be encrypted and sent to the device's AtServer; the device picks them up the next time it connects (or immediately, if already connected).
+All connections from an Atsign Platform-enabled device are _outbound_ to its atServer. Inbound communications must be encrypted and sent to the device's atServer; the device picks them up the next time it connects (or immediately, if already connected).
 
 This means edge devices have no need for open listening ports, no need for a known IP address, and no need for direct network reachability. The result: no network attack surface.
 
-#### Does the AtPlatform require static IPs?
+#### Does Atsign Platform require static IPs?
 
-No. Because all connections are outbound from the edge device to its AtServer, device IP addresses can change freely. AtServers themselves do have static DNS addresses.
+No. Because all connections are outbound from the edge device to its atServer, device IP addresses can change freely. atServers themselves do have static DNS addresses.
 
 #### How are devices addressable when no ports are open?
 
-The AtPlatform provides bidirectional communication originating outbound from the device. The device is reachable as long as it has internet access — no port forwarding required, even behind firewalls or NAT.
+Atsign Platform provides bidirectional communication originating outbound from the device. The device is reachable as long as it has internet access — no port forwarding required, even behind firewalls or NAT.
 
-To send a message to a device, you send it to that device's AtServer. The AtServer authenticates you as a permitted sender and notifies the device. If the device is connected, it receives the message immediately; if not, it receives it as soon as it next connects.
+To send a message to a device, you send it to that device's atServer. The atServer authenticates you as a permitted sender and notifies the device. If the device is connected, it receives the message immediately; if not, it receives it as soon as it next connects.
 
-#### Does the AtPlatform require passwords?
+#### Does Atsign Platform require passwords?
 
 No. Authentication is mutual, cryptographic, and does not depend on shared secrets like passwords between endpoints. This eliminates the entire class of credential-compromise attacks against centralized credential stores.
 
 #### What is the latency?
 
-In a typical case where `@atsign_1` sends an end-to-end-encrypted message to `@atsign_2`, once the socket connections are established, end-to-end latency excluding speed-of-light is typically between 4 and 15 milliseconds — including encryption, decryption, and the AtServer's store-and-forward work.
+In a typical case where `@atsign_1` sends an end-to-end-encrypted message to `@atsign_2`, once the socket connections are established, end-to-end latency excluding speed-of-light is typically between 4 and 15 milliseconds — including encryption, decryption, and the atServer's store-and-forward work.
 
 #### What hardware and operating systems are supported?
 
@@ -134,18 +134,18 @@ Yes, provided there is a microcontroller with enough RAM to handle crypto operat
 
 ### Encryption
 
-#### Why does the AtPlatform use encryption?
+#### Why does Atsign Platform use encryption?
 
 To make it _provably true_ that data is accessible only to the intended parties. Two properties make this work:
 
 1. Asymmetric cryptographic keys are generated and kept on the edge device where the data is created.
-2. Symmetric encryption keys used to share data are themselves encrypted with those asymmetric keys, then exchanged via the atProtocol.
+2. Symmetric encryption keys used to share data are themselves encrypted with those asymmetric keys, then exchanged via the Atsign Protocol.
 
 This means only the creator and the intended recipient ever have the keys to decrypt the data. No infrastructure operator — including Atsign — can access private data.
 
 #### What encryption algorithms are used?
 
-The AtPlatform uses both symmetric and asymmetric encryption. Currently:
+Atsign Platform uses both symmetric and asymmetric encryption. Currently:
 
 * **Symmetric**: AES-256 (used to encrypt the actual data, including data streams)
 * **Asymmetric**: RSA-2048 and ECC (used for authentication, data signing, and exchanging symmetric keys)
@@ -157,20 +157,20 @@ The protocol is designed to be extensible, so additional algorithms (e.g. post-q
 Suppose Alice (`@alice`) wants to share data with Bob (`@bob`):
 
 1. Alice's device generates a new AES key and encrypts the data with it.
-2. Alice's device stores the encrypted data on her AtServer.
-3. Alice's device encrypts the AES key using Bob's RSA public key, and stores that encrypted key on her AtServer too.
-4. Alice's AtServer notifies Bob's AtServer that data is available.
+2. Alice's device stores the encrypted data on her atServer.
+3. Alice's device encrypts the AES key using Bob's RSA public key, and stores that encrypted key on her atServer too.
+4. Alice's AtServer notifies Bob's atServer that data is available.
 5. Bob's device retrieves the encrypted AES key, decrypts it with his RSA private key, then uses the AES key to decrypt the data.
 
-#### What types of cryptographic keys does the AtPlatform manage?
+#### What types of cryptographic keys does Atsign Platform manage?
 
 **Authentication**
 
-* `pkamPublicKey` / `pkamPrivateKey` (asymmetric) — public key held on the AtServer, private key held only on the edge. The technology supports holding the private key in a secure element and delegating sign/encrypt/decrypt operations to it.
+* `pkamPublicKey` / `pkamPrivateKey` (asymmetric) — public key held on the atServer, private key held only on the edge. The technology supports holding the private key in a secure element and delegating sign/encrypt/decrypt operations to it.
 
 **Asymmetric encryption**
 
-* `encryptionPublicKey` / `encryptionPrivateKey` — public key held on the AtServer. When one Atsign needs to share a symmetric key with another, it retrieves the recipient's encryption public key, encrypts the symmetric key with it, and sends it. This keypair is also used for data signing and signature verification.
+* `encryptionPublicKey` / `encryptionPrivateKey` — public key held on the atServer. When one Atsign needs to share a symmetric key with another, it retrieves the recipient's encryption public key, encrypts the symmetric key with it, and sends it. This keypair is also used for data signing and signature verification.
 
 **Symmetric encryption**
 
@@ -195,13 +195,13 @@ There are several options depending on the use case:
 
 #### Are there any other security features?
 
-In addition to end-to-end encryption of private data, TLS validates the authenticity of AtServers and encrypts wire traffic between clients and their AtServer. Communication between AtServers is mutually authenticated and TLS-encrypted.
+In addition to end-to-end encryption of private data, TLS validates the authenticity of atServers and encrypts wire traffic between clients and their atServer. Communication between atServers is mutually authenticated and TLS-encrypted.
 
 ### Data Model
 
 #### What is the data exchange and persistence model?
 
-The atProtocol's default persistence model is a simple key-value store. Record IDs have a syntactical structure that is also used in the protocol exchanges between clients and AtServers.
+The Atsign Protocol's default persistence model is a simple key-value store. Record IDs have a syntactical structure that is also used in the protocol exchanges between clients and atServers.
 
 The record ID structure is:
 
@@ -213,7 +213,7 @@ Record IDs are always stored in lowercase.
 
 **Visibility scope** — defines who can see and access the data:
 
-* **Public** (e.g. `public:location.some_app@alice`) — available to anyone, surfaces in unauthenticated AtServer scans, and is not encrypted.
+* **Public** (e.g. `public:location.some_app@alice`) — available to anyone, surfaces in unauthenticated atServer scans, and is not encrypted.
 * **Private** (e.g. `@bob:phone.some_app@alice`) — shared privately with a specific Atsign. Only shows up in scans for the owner and recipient after authentication, and can only be decrypted by the owner and recipient.
 
 **Entity ID and namespace** (e.g. `@bob:work.email.an_app@alice`):
@@ -231,9 +231,9 @@ Yes. You can configure a device so that different datasets are sent to different
 
 ### Integration
 
-#### Can I integrate the AtPlatform with existing cloud and IoT platforms?
+#### Can I integrate Atsign Platform with existing cloud and IoT platforms?
 
-Yes. The AtPlatform is powered by the open atProtocol and provides SDKs for integration with most stacks. There are open-source libraries, widgets, and connectors available on [Atsign's GitHub organization](https://github.com/atsign-foundation). The default cloud is GCP, but the platform is compatible with any cloud or on-premises infrastructure.
+Yes. Atsign Platform is powered by the open Atsign Protocol and provides SDKs for integration with most stacks. There are open-source libraries, widgets, and connectors available on [Atsign's GitHub organization](https://github.com/atsign-foundation). The default cloud is GCP, but the platform is compatible with any cloud or on-premises infrastructure.
 
 #### How do I assign an Atsign to a device?
 

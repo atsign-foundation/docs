@@ -17,7 +17,7 @@ AtClientManager atClientManager = AtClientManager.getInstance();
 ```
 
 {% hint style="info" %}
-If you need simultaneous access to multiple atClients, you need to create a new [isolate](https://dart.dev/language/concurrency#how-isolates-work) for each additional atClient, and onboard its atSign within the isolate.
+If you need simultaneous access to multiple atClients, you need to create a new [isolate](https://dart.dev/language/concurrency#how-isolates-work) for each additional atClient, and onboard its Atsign within the isolate.
 
 An example of this pattern can be found in [at\_daemon\_server](https://github.com/atsign-foundation/at_services/tree/trunk/packages/at_daemon_server/lib/src/server).
 {% endhint %}
@@ -83,7 +83,7 @@ You can find the full code of this example on our [GitHub](https://github.com/at
 
 ### Introduction
 
-Events is how we send and receive real-time messages in the atPlatform Protocol. The client SDK assists in using the atPlatform Protocol simply and handles all the complex encryption stuff for you.
+Events is how we send and receive real-time messages in the Atsign Protocol. The client SDK assists in using the Atsign Protocol simply and handles all the complex encryption stuff for you.
 
 * `notify` is how we send a real-time message to an Atsign
 * `monitor` is how we listen for real-time messages

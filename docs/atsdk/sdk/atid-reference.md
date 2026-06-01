@@ -5,15 +5,15 @@ description: Learn how to create atKeys for your chosen platform
 # atKey Reference
 
 {% hint style="warning" %}
-AtKey
+atKey
 
-Please note that any reference to the word "AtKey" in this document is not associated with cryptographic keys. The atKey is the "key" of the key-value pair that makes up an atRecord.
+Please note that any reference to the word "atKey" in this document is not associated with cryptographic keys. The atKey is the "key" of the key-value pair that makes up an atRecord.
 {% endhint %}
 
 {% hint style="warning" %}
 This article explains how to create an atKey in the  atSDK.
 
-If you are unfamiliar with atKeys please read [this](../../atplatform/atrecord.md#atid) first.
+If you are unfamiliar with atKeys please read [this](../../atsign-platform/atrecord.md#atid) first.
 {% endhint %}
 
 {% tabs %}
@@ -137,13 +137,13 @@ There are three kinds of atKeys:
 2. [Self atKey](atid-reference.md#self-atkey)
 3. [Shared atKey](atid-reference.md#shared-atkey)
 
-[Public atKey](atid-reference.md#public-atkey) holds public (and non-encrypted) data, available for any atSign to get from you.&#x20;
+[Public atKey](atid-reference.md#public-atkey) holds public (and non-encrypted) data, available for any Atsign to get from you.&#x20;
 
-[Self atKey](atid-reference.md#self-atkey) holds self encrypted data, only available for your own atSign to get.&#x20;
+[Self atKey](atid-reference.md#self-atkey) holds self encrypted data, only available for your own Atsign to get.&#x20;
 
 [Shared atKey](atid-reference.md#shared-atkey) holds encrypted data that is only decipherable by you and the intended recipient.
 
-Every atKey has [metadata](atid-reference.md#metadata), which is free for you to also control (to an extent). Not all metadata should be handled by the developer. Some metadata is managed by the SDK itself. Check out our [documentation](../../atplatform/atrecord.md) on metadata to find out which metadata is worth your time handling.
+Every atKey has [metadata](atid-reference.md#metadata), which is free for you to also control (to an extent). Not all metadata should be handled by the developer. Some metadata is managed by the SDK itself. Check out our [documentation](../../atsign-platform/atrecord.md) on metadata to find out which metadata is worth your time handling.
 
 Before running any of the examples, be sure to include `atkey.h`
 

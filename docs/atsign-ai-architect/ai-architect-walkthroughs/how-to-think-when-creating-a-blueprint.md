@@ -239,7 +239,7 @@ Now, define how the nodes interact to complete the loop.
 {% hint style="success" %}
 **Goal**
 
-Tell the system the speed and method of communication. To learn more about the various connection types, see the [Nodes & Connections](../ai-architect-overview/nodes-and-connections.md) page.&#x20;
+Tell the system the speed and method of communication. To learn more about the various connection types, see the [Nodes & Connections](../atsign-ai-architect-overview/nodes-and-connections.md) page.&#x20;
 {% endhint %}
 
 {% hint style="danger" icon="message-check" %}

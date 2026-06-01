@@ -3,13 +3,13 @@ description: An overview of Atsign's core pillars of technology
 icon: layer-group
 ---
 
-# atPlatform Overview
+# Atsign Platform Overview
 
 ## TL;DR
 
-The atPlatform allows people, entities and things to communicate privately and securely without having to know about the intricacies of the underlying IP network. The atPlatform Protocol is the application protocol used to communicate and Atsign are the addresses on the protocol. All cryptographic keys are cut at the edge by the Atsign owner, meaning only the receiving and sending Atsigns see data in the clear.
+Atsign Platform allows people, entities and things to communicate privately and securely without having to know about the intricacies of the underlying IP network. The Atsign Protocol is the application protocol used to communicate, and Atsigns are the addresses on the protocol. All cryptographic keys are cut at the edge by the Atsign owner, meaning only the receiving and sending Atsigns see data in the clear.
 
-The atPlatform can be used to send data synchronously or asynchronously, and can be used as a data plane, or a control plane, or both simultaneously at Internet scale.
+Atsign Platform can be used to send data synchronously or asynchronously, and can be used as a data plane, or a control plane, or both, simultaneously at Internet scale.
 
 <figure><picture><source srcset="../../.gitbook/assets/Dark.svg" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/Light.svg" alt="Diagram of Atsign&#x27;s Core Technology"></picture><figcaption></figcaption></figure>
 
@@ -21,7 +21,7 @@ Every **atServer** is associated with _one_ **Atsign**, and each atServer stores
 
 When provided an **Atsign**, the **atDirectory** returns a _DNS address_ and _port number_ for its **atServer.**
 
-The **atPlatform Protocol** is the _application layer protocol_ used to communicate with an **atServer.**
+The **Atsign Protocol** is the _application layer protocol_ used to communicate with an **atServer.**
 
 </details>
 
@@ -54,14 +54,14 @@ In order for an Atsign to communicate with another one on the internet, we need 
 
 The location of an atServer is found using the atDirectory service (`root.atsign.org:64`). This directory returns the DNS address and port number of the atServer for any Atsign that it has a record for. The atDirectory service contains no information about the owner of the Atsign.
 
-## atPlatform Protocol
+## Atsign Protocol
 
 {% hint style="info" %}
-The atPlatform Protocol communicates via layer 7, the application layer of the OSI model, over TCP/IP.
+The Atsign Protocol communicates via layer 7, the application layer of the OSI model, over TCP/IP.
 {% endhint %}
 
-The atPlatform Protocol is an application protocol that enables data sharing between Atsigns. You can learn more about the atPlatform Protocol by reading the [specification](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md). The atPlatform Protocol uses TCP/IP and TLS but does not specify how data itself is encrypted, that is the job of the atSDK and atClient libraries.
+The Atsign Protocol is an application protocol that enables data sharing between Atsigns. You can learn more about the Atsign Protocol by reading the [specification](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md). The Atsign Protocol uses TCP/IP and TLS but does not specify how data itself is encrypted, that is the job of the atSDK and atClient libraries.
 
 ## atSDK
 
-atSDKs provide developers with atPlatform specific building tools in a number of languages and for a number of operating systems and hardware. The atSDK allows developers to rapidly develop applications that use the atPlatform.
+atSDKs provide developers with Atsign Platform specific building tools in a number of languages and for a number of operating systems and hardware. The atSDK allows developers to rapidly develop applications that use Atsign Platform.

@@ -32,7 +32,7 @@ AtClient atClient = atClientManager.atClient;
 
 #### atKey
 
-Before you can do anything with an atRecord, you need an [atKey](../../atplatform/atrecord.md#atidentifier) to represent it.
+Before you can do anything with an atRecord, you need an [atKey](../../atsign-platform/atrecord.md#atidentifier) to represent it.
 
 If you don't know how to create an atKey, please see the [reference](atid-reference.md) first.
 
@@ -229,11 +229,11 @@ You can find all of these examples on our [GitHub](https://github.com/atsign-fou
 
 In this section, we will learn how to `put`, `get`, and `delete` an atKey.
 
-If you are unfamiliar with the different atKey types, check out our documentation on [atRecords](../../atplatform/atrecord.md).
+If you are unfamiliar with the different atKey types, check out our documentation on [atRecords](../../atsign-platform/atrecord.md).
 
 ### Put Public atKey
 
-#### 1. Create Public AtKey
+#### 1. Create Public atKey
 
 First, create a public atKey. It is important to note that the `shared_by` Atsign should be the same as the authenticated Atsign in the application.
 
@@ -575,7 +575,7 @@ exit:
 
 ### Get Public atKey
 
-#### 1. Create Public AtKey
+#### 1. Create Public atKey
 
 First, create a public atKey. It is important to note that the `shared_by` Atsign should be the same as the authenticated Atsign in the application.
 
@@ -953,7 +953,7 @@ exit:
 
 ### Delete an atKey
 
-#### 1. Create an AtKey
+#### 1. Create an atKey
 
 First step is to create the atKey that you wish to delete. This can be of any atKey type (public, self, or shared). What is important to note is that you can only delete an atKey that you own (which means that the authenticated Atsign is the same as the shared\_by Atsign). This should be obvious because you can only delete atKeys that have once been created by you. Only the rightful owners of the atKey that was created can delete it.
 
