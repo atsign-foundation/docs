@@ -13,7 +13,7 @@ icon: clipboard-list-check
 {% update date="2026-06-08" %}
 ## Build with Claude, powered by the Atsign MCP server
 
-<sup>v3.0.15</sup>
+<sup>v3.0.16</sup>
 
 <mark style="color:$primary;background-color:orange;">**Create blueprints faster, with Claude**</mark>
 
