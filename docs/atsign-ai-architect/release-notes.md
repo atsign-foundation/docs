@@ -10,6 +10,17 @@ icon: clipboard-list-check
 ***
 
 {% updates format="full" %}
+{% update date="2026-06-08" %}
+## Build with Claude, powered by the Atsign MCP server
+
+<sup>v3.0.15</sup>
+
+<mark style="color:$primary;background-color:orange;">**Create blueprints faster, with Claude**</mark>
+
+* You can now create complete blueprints using your **Atsign MCP server** and **Claude**, giving you a new, streamlined way to design secure architectures
+* Create, refine, and iterate on blueprints without touching the UI. Perfect for fast prototyping or automated workflows
+{% endupdate %}
+
 {% update date="2026-05-06" tags="2.0.1" %}
 ## More ways to build, less friction
 
