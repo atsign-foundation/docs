@@ -36,9 +36,9 @@
 * [Atsign AI Architect Overview](atsign-ai-architect/atsign-ai-architect-overview/README.md)
   * [Nodes and Connections](atsign-ai-architect/atsign-ai-architect-overview/nodes-and-connections.md)
 * [AI Architect Walkthroughs](atsign-ai-architect/ai-architect-walkthroughs/README.md)
+  * [Build with Claude and MCP](atsign-ai-architect/ai-architect-walkthroughs/build-with-claude-and-mcp.md)
   * [Getting Started with AI Architect](atsign-ai-architect/ai-architect-walkthroughs/getting-started-with-ai-architect.md)
   * [How to Think When Creating a Blueprint](atsign-ai-architect/ai-architect-walkthroughs/how-to-think-when-creating-a-blueprint.md)
-  * [Using Claude with the MCP Server](atsign-ai-architect/ai-architect-walkthroughs/using-claude-with-the-mcp-server.md)
 * [Release Notes](atsign-ai-architect/release-notes.md)
 
 ## Important links
