@@ -19,6 +19,15 @@ icon: clipboard-list-check
 
 * You can now create complete blueprints using your **Atsign MCP server** and **Claude**, giving you a new, streamlined way to design secure architectures
 * Create, refine, and iterate on blueprints without touching the UI. Perfect for fast prototyping or automated workflows
+
+<mark style="color:$primary;background-color:orange;">**Expanded testing capabilities**</mark>
+
+* Trial now includes **10 free Atsigns** (up from 2) so you can test and prototype more freely
+* Improved export‑prompt UI for a clearer, faster workflow
+
+<mark style="color:$primary;background-color:orange;">**Better sign-up and support**</mark>
+
+* Updated sign‑up flow with lightweight KYC to help us understand your needs and provide faster, more accurate support
 {% endupdate %}
 
 {% update date="2026-05-06" tags="2.0.1" %}
@@ -31,13 +40,13 @@ icon: clipboard-list-check
 * Introducing the **AI Agent node**, giving you more flexibility to design intelligent workflows
 * Let the LLM take the lead with **default connections**, so you can focus on mapping your blueprint instead of configuring every step
 
-<mark style="color:$primary;background-color:orange;">**Account Experience**</mark>
+<mark style="color:$primary;background-color:orange;">**Account experience**</mark>
 
 * Added a **magic link flow** for a seamless account access
 * New **sign‑up and sign‑in flow**, added as the first step toward a more secure, personalized experience
 * Subscribe to email updates under **Account Details** to stay up to date with the latest improvements
 
-<mark style="color:$primary;background-color:orange;">**Get Started Quicker**</mark>
+<mark style="color:$primary;background-color:orange;">**Get started quicker**</mark>
 
 * Reduced early friction by allowing you to sign up and receive your test Atsigns to the end of the flow, only once your app is built.
 
