@@ -9,7 +9,7 @@ icon: readme
 
 ### MCP Walkthrough
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Build with Claude and MCP</strong></td><td>Learn how to connect Claude to the Atsign MCP server and generate blueprints directly from your prompts.</td><td><a href="../../.gitbook/assets/welcome-mcp-img.svg">welcome-mcp-img.svg</a></td><td><a href="build-with-claude-and-mcp.md">build-with-claude-and-mcp.md</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover-dark data-type="image">Cover image (dark)</th></tr></thead><tbody><tr><td><strong>Build with Claude and MCP</strong></td><td>Learn how to connect Claude to the Atsign MCP server and generate blueprints directly from your prompts.</td><td><a href="../../.gitbook/assets/Light (2).svg">Light (2).svg</a></td><td><a href="build-with-claude-and-mcp.md">build-with-claude-and-mcp.md</a></td><td><a href="../../.gitbook/assets/Dark (3).svg">Dark (3).svg</a></td></tr></tbody></table>
 
 ### App Walkthroughs
 
