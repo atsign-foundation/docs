@@ -7,6 +7,7 @@
 * [Atsign Platform Overview](atsign-platform/core/README.md)
   * [Frequently Asked Questions](atsign-platform/core/frequently-asked-questions.md)
 * [Atsign](atsign-platform/atsign.md)
+* [atKeys](atsign-platform/atkeys.md)
 * [atRecord](atsign-platform/atrecord.md)
 * [Infrastructure](atsign-platform/infrastructure.md)
 
