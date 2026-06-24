@@ -47,7 +47,7 @@
 * [atsign.com ](https://atsign.com/)
 * [Atsign Registrar](https://my.atsign.com/)
 * [NoPorts](https://noports.com)
-* [atPlatform Protocol Specs](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/at_protocol_specification.md)
+* [Atsign Protocol](https://github.com/atsign-foundation/at_protocol/blob/trunk/specification/atsign_protocol_specification.md)
 
 ## SOCIALS
 
