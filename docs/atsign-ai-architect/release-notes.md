@@ -10,10 +10,20 @@ icon: clipboard-list-check
 ***
 
 {% updates format="full" %}
+{% update date="2026-06-22" %}
+## Improved Performance
+
+<sup>v3.0.25</sup>
+
+<mark style="color:$primary;background-color:orange;">**Faster and smoother experience**</mark>
+
+* Sign‑in is now faster, blueprint editing feels smoother, and moving **nodes** around the canvas is more responsive, giving you a noticeably quicker and more fluid experience end‑to‑end.
+{% endupdate %}
+
 {% update date="2026-06-08" %}
 ## Build with Claude, powered by the Atsign MCP server
 
-<sup>v3.0.16</sup>
+<sup>v3.0.0</sup>
 
 <mark style="color:$primary;background-color:orange;">**Create blueprints faster, with Claude**</mark>
 
