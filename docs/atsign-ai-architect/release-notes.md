@@ -10,8 +10,22 @@ icon: clipboard-list-check
 ***
 
 {% updates format="full" %}
+{% update date="2026-07-08" %}
+## Live walkthroughs & 7-day sign-in
+
+<sup>v3.0.30</sup>
+
+<mark style="color:$primary;background-color:orange;">**Schedule a call with us**</mark>
+
+* You can now book a kickstart session with our team to walk through a demo or get guided support building your first blueprint.
+
+<mark style="color:$primary;background-color:orange;">**Extended session lengths**</mark>
+
+* We’ve extended the auto sign-out window from 24 hours to 7 days so you can pick up exactly where you left off without the daily sign-in hassle.
+{% endupdate %}
+
 {% update date="2026-06-22" %}
-## Improved Performance
+## Improved performance
 
 <sup>v3.0.25</sup>
 
