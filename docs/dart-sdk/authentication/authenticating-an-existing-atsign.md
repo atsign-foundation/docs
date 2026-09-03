@@ -8,7 +8,7 @@ description: >-
 
 ## What is authentication?
 
-Authentication is what you do every time an already-**onboarded** (activated) Atsign needs to connect to its atServer. Unlike onboarding, it does not generate new keys or touch the atServer's enrollment state, it reads the existing key material and proves ownership of the Atsign using **PKAM**.
+Authentication is what you do every time an already-onboarded (activated) Atsign needs to connect to its atServer. Unlike onboarding, it does not generate new keys or touch the atServer's enrollment state, it reads the existing key material and proves ownership of the Atsign using PKAM.
 
 This is the flow you write in almost every app, for almost every session. It never needs a CRAM key.
 
@@ -16,7 +16,7 @@ If the Atsign has never been activated, use [onboarding-a-new-atsign.md](onboard
 
 ## Prerequisites
 
-* An **already-onboarded (activated)** Atsign
+* An already-onboarded (activated) Atsign
 * Its `.atKeys` file
 
 ## The core classes

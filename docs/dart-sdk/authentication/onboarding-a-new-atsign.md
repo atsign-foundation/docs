@@ -10,7 +10,7 @@ description: >-
 
 Onboarding is the one-time process of activating an Atsign. An "onboarded" or "activated" Atsign means the `.atKeys` file for the corresponding Atsign and atServer is generated. To onboard the same Atsign again, the Atsign needs to be [reset](../../atsign-platform/atsign/#resetting-your-atsign).
 
-Every later authentication uses [authenticating-an-existing-atsign.md](authenticating-an-existing-atsign.md "mention"). If you are building an application that only uses and assumes already-onboarded Atsigns, then move onto the next section [authenticating-an-existing-atsign.md](authenticating-an-existing-atsign.md "mention").
+Every later authentication uses [authenticating-an-existing-atsign.md](authenticating-an-existing-atsign.md "mention"). If you are building an application that only uses and assumes already-onboarded Atsigns, then move onto the next section: [authenticating-an-existing-atsign.md](authenticating-an-existing-atsign.md "mention").
 
 ## Prerequisites
 
@@ -19,11 +19,11 @@ Every later authentication uses [authenticating-an-existing-atsign.md](authentic
 
 ## The core classes
 
-| Class                | Description                                                                   |
-| -------------------- | ----------------------------------------------------------------------------- |
-| AtAuth               | Object that holds onboarding/authentication logic. Contains `AtAuth.onboard.` |
-| AtOnboardingRequest  | Represents a request to onboard an Atsign                                     |
-| AtOnboardingResponse | Represents a response after `AtAuth.onboard` was executed                     |
+| Class                  | Description                                                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `AtAuth`               | Object that holds onboarding/authentication logic. Contains `AtAuth.onboard` which we will be covering in this section. |
+| `AtOnboardingRequest`  | Represents a request to onboard an Atsign                                                                               |
+| `AtOnboardingResponse` | Represents a response after `AtAuth.onboard` was executed                                                               |
 
 ## Onboarding flows
 
@@ -214,4 +214,4 @@ await atAuth.completeActivation();
 
 ## Onboarding again
 
-If you want to test your onboarding flow again with the same Atsign, you must reset your Atsign. Note that this will completely wipe your Atsign's atServer, all of its data, and also render your current set of `.atKeys` incapable of authenticating to its Atsign. See our section on [Resetting your Atsign](../../atsign-platform/atsign/#resetting-your-atsign).
+If you want to test your onboarding flow again with the same Atsign, you must reset your Atsign. Note that this will completely wipe your Atsign's atServer, all of its data, and also render your current set of `.atKeys` incapable of authenticating to its Atsign. See our section on [Resetting your Atsign](../../atsign-platform/atsign/atsign.md#resetting-your-atsign).

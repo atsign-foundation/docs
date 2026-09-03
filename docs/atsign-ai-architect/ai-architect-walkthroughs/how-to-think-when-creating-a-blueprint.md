@@ -25,7 +25,7 @@ Before you begin, it is helpful to shift your focus from adding _features_ to id
 
 ### Starter blueprint
 
-To get started, go to [**aiarchitect.atsign.com**](https://www.aiarchitect.atsign.com/). From the home screen, select **Start with an Example Blueprint**, then choose the **Grocery List App** blueprint to load the example.
+To get started, go to [**aiarchitect.atsign.com**](https://aiarchitect.atsign.com/). From the home screen, select **Start with an Example Blueprint**, then choose the **Grocery List App** blueprint to load the example.
 
 Page 1, is the starting point. Before you change anything, let's take a moment to understand the actors, data, and flows.
 

@@ -24,7 +24,7 @@ description: A sample command-line application.
 version: 1.0.0
 
 environment:
-  sdk: ^3.13.0
+  sdk: ^3.12.0
 
 dependencies:
   at_auth: ^3.3.0

@@ -59,7 +59,7 @@ The receiver can filter which notifications it receives by supplying a regex pat
 
 The atServer also sends a special system-level notification called a **stats notification** on the monitor connection. The atServer itself generates it whenever the server-side commit log advances (meaning something changed on the server). The client uses this signal to know that it should sync, pulling down whatever new AtRecords were created, updated, or deleted on the server since the last sync.
 
-Stats notifications are how the Atsign Platform keeps every device in sync without polling. The client does not need to check for changes on a timer. It simply monitors the connection, and the atServer notifies it when something changed. Read more on [atrecords.md](atrecords.md "mention") [here](atrecords.md).
+Stats notifications are how the Atsign Platform keeps every device in sync without polling. The client does not need to check for changes on a timer. It simply monitors the connection, and the atServer notifies it when something changed. Read more on [atrecords.md](atrecords.md "mention").
 
 ## Notifications and RPCs
 

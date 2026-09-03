@@ -64,6 +64,7 @@
 ## Flutter SDK
 
 * [Getting Started](flutter-sdk/getting-started/README.md)
+  * [Overview](flutter-sdk/getting-started/overview.md)
   * [Prerequisites](flutter-sdk/getting-started/prerequisites.md)
   * [Quickstart](flutter-sdk/getting-started/quickstart.md)
   * [Our packages](flutter-sdk/getting-started/our-packages.md)

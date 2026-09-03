@@ -1,16 +1,14 @@
 ---
-description: AtCollections hold lists of CItems
+description: Learn about what an AtCollection is and ways you can build one.
 ---
 
 # Introduction
 
 ## What are AtCollections?
 
-AtCollections is a typed, shareable, reactive layer on top of AtRecords.
+AtCollections is a typed, shareable, reactive layer on top of AtRecords.&#x20;
 
-An `AtCollection<T>` hold a list of `CItem<T>`, where `T` is a type that you define. A `CItem<T>` is a record that wraps your own domain object (a `Todo` class, a `Pet` class, a Dart `Map`, or a plain `String`).&#x20;
-
-Instead of working with raw `AtKey`/`AtValue` pairs, the SDK handles key shapes, per-recipient fan-out, encryption, sync, and event plumbing underneath.
+An `AtCollection<T>` hold a list of `CItem<T>`, where `T` is a type that you define. A `CItem<T>` is a record that wraps your own domain object (a `Todo` class, a `Pet` class, a Dart `Map`, or a plain `String`). Instead of working with raw `AtKey`/`AtValue` pairs, the SDK handles key shapes, per-recipient fan-out, encryption, sync, and event plumbing underneath.
 
 Each collection is scoped to a namespace (like `todos.my_app`) and a type. Items in a collection are owned by the author Atsign that created them and can be shared with other Atsigns.
 
