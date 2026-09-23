@@ -11,11 +11,7 @@ Atsign Platform allows people, entities and things to communicate privately and 
 
 Atsign Platform can be used to send data synchronously or asynchronously, and can be used as a data plane, or a control plane, or both, simultaneously at Internet scale.
 
-<figure><img src="../.gitbook/assets/dark_mode.png" alt="Atsign platform visual showing the 5 pillars: SDKs, atDirectory, Atsign protocol, Atsign and atServer"><figcaption><p>Atsign Platform composition (dark mode)</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/light_mode (1).png" alt="Atsign platform composition, light mode"><figcaption><p>Atsign Platform composition (light mode)</p></figcaption></figure>
-
-
+<figure><picture><source srcset="../.gitbook/assets/dark_mode.png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/light_mode (1).png" alt="Atsign platform composition, light mode"></picture><figcaption><p>Atsign Platform Overview</p></figcaption></figure>
 
 <details>
 
